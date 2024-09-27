@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Your Luck</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .card {
+      width: 150px;
+      height: 200px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      font-weight: bold;
+      transition: transform 2s ease, background-color 1s ease, border 1s ease, box-shadow 1s ease;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .tier-box {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border: 2px solid #000;
+      border-radius: 5px;
+      width: 150px;
+    }
+
+    .tier-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tier-box li {
+      font-size: 14px;
+      margin: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .checked {
+      text-decoration: line-through;
+      color: green;
+    }
+
+    .checkmark {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="card">?</div>
+    <button id="spinButton">Test Luck</button>
+  </div>
+
+  <!-- Box for the tiers list -->
+  <div class="tier-box">
+    <ul id="tierList">
+      <li id="common">Common</li>
+      <li id="uncommon">Uncommon</li>
+      <li id="rare">Rare</li>
+      <li id="superRare">Super Rare</li>
+      <li id="ultraRare">Ultra Rare</li>
+      <li id="epic">Epic</li>
+      <li id="legendary">Legendary</li>
+      <li id="mythic">Mythic</li>
+      <li id="divine">Divine</li>
+      <li id="impossible">Impossible</li>
+    </ul>
+  </div>
+
+  <script>
+    document.getElementById('spinButton').addEventListener('click', spinCard);
+
+    const tiers = [
+      { tier: 'Common', chance: 0.40, color: '#d3d3d3', border: '1px solid #a9a9a9', elementId: 'common' },
+      { tier: 'Uncommon', chance: 0.25, color: '#7FFF00', border: '1px solid #32CD32', elementId: 'uncommon' },
+      { tier: 'Rare', chance: 0.15, color: '#1E90FF', border: '2px solid #0000FF', elementId: 'rare' },
+      { tier: 'Super Rare', chance: 0.10, color: '#9932CC', border: '2px solid #9400D3', elementId: 'superRare' },
+      { tier: 'Ultra Rare', chance: 0.05, color: '#FFD700', border: '3px solid #FF8C00', elementId: 'ultraRare' },
+      { tier: 'Epic', chance: 0.025, color: '#FF4500', border: '3px solid #B22222', elementId: 'epic' },
+      { tier: 'Legendary', chance: 0.01, color: '#FF1493', border: '4px solid #FF69B4', elementId: 'legendary' },
+      { tier: 'Mythic', chance: 0.005, color: '#4B0082', border: '4px solid #800080', elementId: 'mythic' },
+      { tier: 'Divine', chance: 0.003, color: '#00FFFF', border: '5px solid #00CED1', elementId: 'divine' },
+      { tier: 'Impossible', chance: 0.002, color: '#FFD700', border: '5px solid #FF4500', elementId: 'impossible' }
+    ];
+
+    // Function to spin the card
+    function spinCard() {
+      const cardElement = document.getElementById('card');
+      cardElement.style.transform = 'rotate(360deg)';  // Start the spin animation
+
+      setTimeout(() => {
+        cardElement.style.transform = '';  // Reset rotation
+        const result = getRandomRarity(tiers);
+        cardElement.textContent = result.tier;
+        updateCardAppearance(cardElement, result);
+        markTierAsCollected(result.elementId);
+      }, 2000);  // 2 seconds for the spin animation
+    }
+
+    // Function to calculate a random rarity based on chances
+    function getRandomRarity(tiers) {
+      const randomNum = Math.random();
+      let cumulativeChance = 0;
+      
+      for (let i = 0; i < tiers.length; i++) {
+        cumulativeChance += tiers[i].chance;
+        if (randomNum <= cumulativeChance) {
+          return tiers[i];
+        }
+      }
+      return tiers[0];  // Fallback to common if no match (unlikely)
+    }
+
+    // Function to update card appearance based on rarity
+    function updateCardAppearance(cardElement, rarity) {
+      cardElement.style.backgroundColor = rarity.color;
+      cardElement.style.border = rarity.border;
+      cardElement.style.boxShadow = rarity.shadow ? rarity.shadow : 'none';
+    }
+
+    // Function to mark the tier as collected
+    function markTierAsCollected(elementId) {
+      const tierElement = document.getElementById(elementId);
+      if (!tierElement.classList.contains('checked')) {
+        tierElement.classList.add('checked');
+        tierElement.innerHTML += ' <span class="checkmark">✔</span>';
+      }
+    }
+  </script>
+</body>
+</html>
