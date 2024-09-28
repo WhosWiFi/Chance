@@ -49,55 +49,44 @@
     }
 
     .common {
-      background-color: #ff0000;
-      background-image: url('/gold.jpg');
-      background-size: cover;
-      background-position: center;
+      background-image: url('/silver.jpg');
+      background-color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 0.8);
     }
 
-
     .uncommon {
-      background-color: #7FFF00;
-      background-image: url('uncommon.jpg');
+      background-image: url('/gold.jpg');
     }
 
     .rare {
-      background-color: #1E90FF;
       background-image: url('rare.jpg');
     }
 
     .superRare {
-      background-color: #9932CC;
       background-image: url('superRare.jpg');
     }
 
     .ultraRare {
-      background-color: #FFD700;
       background-image: url('ultraRare.jpg');
     }
 
     .epic {
-      background-color: #FF4500;
       background-image: url('epic.jpg');
     }
 
     .legendary {
-      background-color: #FF1493;
       background-image: url('legendary.jpg');
     }
 
     .mythic {
-      background-color: #4B0082;
       background-image: url('mythic.jpg');
     }
 
     .divine {
-      background-color: #00FFFF;
       background-image: url('divine.jpg');
     }
 
     .secret {
-      background-color: #FFD700;
       background-image: url('secret.jpg');
     }
 
@@ -170,16 +159,76 @@
     document.getElementById('spinButton').addEventListener('click', spinRarity);
 
     const tiers = [
-      { tier: 'Common', chance: 0.40, elementId: 'common', className: 'common' },
-      { tier: 'Uncommon', chance: 0.25, elementId: 'uncommon', className: 'uncommon' },
-      { tier: 'Rare', chance: 0.15, elementId: 'rare', className: 'rare' },
-      { tier: 'Super Rare', chance: 0.10, elementId: 'superRare', className: 'superRare' },
-      { tier: 'Ultra Rare', chance: 0.05, elementId: 'ultraRare', className: 'ultraRare' },
-      { tier: 'Epic', chance: 0.025, elementId: 'epic', className: 'epic' },
-      { tier: 'Legendary', chance: 0.01, elementId: 'legendary', className: 'legendary' },
-      { tier: 'Mythic', chance: 0.005, elementId: 'mythic', className: 'mythic' },
-      { tier: 'Divine', chance: 0.003, elementId: 'divine', className: 'divine' },
-      { tier: 'Secret', chance: 0.002, elementId: 'secret', className: 'secret' }
+      { 
+        tier: 'Common', 
+        chance: 0.40, 
+        elementId: 'common', 
+        className: 'common', 
+        rarityText: 'Common - Better luck next time!' 
+      },
+      { 
+        tier: 'Uncommon', 
+        chance: 0.25, 
+        elementId: 'uncommon', 
+        className: 'uncommon', 
+        rarityText: 'Uncommon - Getting warmer!' 
+      },
+      { 
+        tier: 'Rare', 
+        chance: 0.15, 
+        elementId: 'rare', 
+        className: 'rare', 
+        rarityText: 'Rare - That\'s pretty good!' 
+      },
+      { 
+        tier: 'Super Rare', 
+        chance: 0.10, 
+        elementId: 'superRare', 
+        className: 'superRare', 
+        rarityText: 'Super Rare - Now you\'re lucky!' 
+      },
+      { 
+        tier: 'Ultra Rare', 
+        chance: 0.05, 
+        elementId: 'ultraRare', 
+        className: 'ultraRare', 
+        rarityText: 'Ultra Rare - Incredible!' 
+      },
+      { 
+        tier: 'Epic', 
+        chance: 0.025, 
+        elementId: 'epic', 
+        className: 'epic', 
+        rarityText: 'Epic - You\'re one of the few!' 
+      },
+      { 
+        tier: 'Legendary', 
+        chance: 0.01, 
+        elementId: 'legendary', 
+        className: 'legendary', 
+        rarityText: 'Legendary - Unbelievable!' 
+      },
+      { 
+        tier: 'Mythic', 
+        chance: 0.005, 
+        elementId: 'mythic', 
+        className: 'mythic',
+        rarityText: 'Mythic - The stuff of legends!' 
+      },
+      { 
+        tier: 'Divine', 
+        chance: 0.003, 
+        elementId: 'divine', 
+        className: 'divine',
+        rarityText: 'Divine - Blessed by the gods!' 
+      },
+      { 
+        tier: 'Secret', 
+        chance: 0.002, 
+        elementId: 'secret', 
+        className: 'secret',
+        rarityText: 'Secret - The ultimate discovery!' 
+      }
     ];
 
     let currentRotation = 0;
@@ -199,8 +248,8 @@
         // Wait for the spin animation (2 seconds) before morphing the card
         setTimeout(() => {
             const result = getRandomRarity(tiers);
-            rarityText.textContent = result.tier;  // Set the rarity text at the bottom
-            updateRarityAppearance(rarityBox, result.className);
+            rarityText.textContent = result.rarityText;  // Set the custom rarity text
+            updateRarityAppearance(rarityBox, result.className, result.bgColor, result.textColor);
             markTierAsCollected(result.elementId);
 
             // Enable the button after the animation completes

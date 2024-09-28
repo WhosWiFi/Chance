@@ -16,6 +16,14 @@ app.get('/', function (req, res) {
       });
 });
 
+app.get('/silver.jpg', function (req, res) {
+  fs.readFile('silver.jpg', function (err, data) {
+    res.writeHead(200, {'Content-Type': 'image/jpeg'});
+    res.write(data);
+    return res.end();
+  });
+});
+
 app.get('/gold.jpg', function (req, res) {
   fs.readFile('gold.jpg', function (err, data) {
     res.writeHead(200, {'Content-Type': 'image/jpeg'});
