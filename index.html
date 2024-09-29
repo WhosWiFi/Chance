@@ -33,6 +33,7 @@
       transition: transform 2s ease;
       background-size: cover;
       background-position: center;
+      background-image: url('/default.jpg');
     }
 
     .rarity-text {
@@ -63,7 +64,7 @@
     }
 
     .superRare {
-      background-image: url('superRare.jpg');
+      background-image: url('/ruby.jpg');
     }
 
     .ultraRare {
@@ -79,15 +80,15 @@
     }
 
     .mythic {
-      background-image: url('mythic.jpg');
+      background-image: url('/pink_panther.jpg');
     }
 
     .divine {
-      background-image: url('divine.jpg');
+      background-image: url('/hope_necklace.jpg');
     }
 
     .secret {
-      background-image: url('secret.jpg');
+      background-image: url('/dragon_egg.jpg');
     }
 
     button {
@@ -135,9 +136,9 @@
 <body>
   <div class="container">
     <div class="rarity-box" id="rarityBox">
-      <div class="rarity-text" id="rarityText">?</div>
+      <div class="rarity-text" id="rarityText">???</div>
     </div>
-    <button id="spinButton">Test Luck</button>
+    <button id="spinButton">Test your luck.</button>
   </div>
 
   <div class="tier-box">
@@ -164,35 +165,35 @@
         chance: 0.40, 
         elementId: 'common', 
         className: 'common', 
-        rarityText: 'Common - Better luck next time!' 
+        rarityText: 'Common - Copper' 
       },
       { 
         tier: 'Uncommon', 
         chance: 0.25, 
         elementId: 'uncommon', 
         className: 'uncommon', 
-        rarityText: 'Uncommon - Getting warmer!' 
+        rarityText: 'Uncommon - Silver' 
       },
       { 
         tier: 'Rare', 
         chance: 0.15, 
         elementId: 'rare', 
         className: 'rare', 
-        rarityText: 'Rare - That\'s pretty good!' 
+        rarityText: 'Rare - Gold' 
       },
       { 
         tier: 'Super Rare', 
         chance: 0.10, 
         elementId: 'superRare', 
         className: 'superRare', 
-        rarityText: 'Super Rare - Now you\'re lucky!' 
+        rarityText: 'Super Rare - Ruby' 
       },
       { 
         tier: 'Ultra Rare', 
         chance: 0.05, 
         elementId: 'ultraRare', 
         className: 'ultraRare', 
-        rarityText: 'Ultra Rare - Incredible!' 
+        rarityText: 'Ultra Rare - Royalty!' 
       },
       { 
         tier: 'Epic', 
@@ -206,14 +207,14 @@
         chance: 0.01, 
         elementId: 'legendary', 
         className: 'legendary', 
-        rarityText: 'Legendary - Unbelievable!' 
+        rarityText: 'Legendary - Living Legend' 
       },
       { 
         tier: 'Mythic', 
         chance: 0.005, 
         elementId: 'mythic', 
         className: 'mythic',
-        rarityText: 'Mythic - The stuff of legends!' 
+        rarityText: 'Mythic - Pink Panther' 
       },
       { 
         tier: 'Divine', 
@@ -227,7 +228,7 @@
         chance: 0.002, 
         elementId: 'secret', 
         className: 'secret',
-        rarityText: 'Secret - The ultimate discovery!' 
+        rarityText: 'Secret - 1/1' 
       }
     ];
 

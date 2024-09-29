@@ -16,8 +16,16 @@ app.get('/', function (req, res) {
       });
 });
 
+app.get('/default.jpg', function (req, res) {
+    fs.readFile('images/default.jpg', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      return res.end();
+    });
+});
+
 app.get('/copper.jpg', function (req, res) {
-  fs.readFile('copper.jpg', function (err, data) {
+  fs.readFile('images/copper.jpg', function (err, data) {
     res.writeHead(200, {'Content-Type': 'image/jpeg'});
     res.write(data);
     return res.end();
@@ -25,7 +33,7 @@ app.get('/copper.jpg', function (req, res) {
 });
 
 app.get('/silver.jpg', function (req, res) {
-  fs.readFile('silver.jpg', function (err, data) {
+  fs.readFile('images/silver.jpg', function (err, data) {
     res.writeHead(200, {'Content-Type': 'image/jpeg'});
     res.write(data);
     return res.end();
@@ -33,11 +41,43 @@ app.get('/silver.jpg', function (req, res) {
 });
 
 app.get('/gold.jpg', function (req, res) {
-  fs.readFile('gold.jpg', function (err, data) {
+  fs.readFile('images/gold.jpg', function (err, data) {
     res.writeHead(200, {'Content-Type': 'image/jpeg'});
     res.write(data);
     return res.end();
   });
+});
+
+app.get('/ruby.jpg', function (req, res) {
+    fs.readFile('images/ruby.jpg', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      return res.end();
+    });
+});
+
+app.get('/pink_panther.jpg', function (req, res) {
+    fs.readFile('images/pink_panther.jpg', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      return res.end();
+    });
+});
+
+app.get('/hope_necklace.jpg', function (req, res) {
+    fs.readFile('images/hope_necklace.jpg', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      return res.end();
+    });
+});
+
+app.get('/dragon_egg.jpg', function (req, res) {
+    fs.readFile('images/dragon_egg.jpg', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      return res.end();
+    });
 });
 
 app.listen(3000, function () {

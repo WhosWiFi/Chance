@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="en" dir="ltr" prefix=": content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><![endif]-->
+  <!--[if !IE]><!--><html class="no-js" lang="en" dir="ltr" prefix=": content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+<script src="https://www.google.com/recaptcha/api.js?hl=en" async="async" defer="defer"></script>
+<link rel="shortcut icon" href="https://www.si.edu/sites/default/files/favicon_1.ico" type="image/vnd.microsoft.icon" />
+<link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.si.edu/sites/all/themes/si_baseline/favicon/apple-touch-icon.png?v=Jy7B3ml8wp" />
+<link rel="icon" sizes="32x32" href="https://www.si.edu/sites/all/themes/si_baseline/favicon/favicon-32x32.png?v=Jy7B3ml8wp" />
+<link rel="icon" sizes="16x16" href="https://www.si.edu/sites/all/themes/si_baseline/favicon/favicon-16x16.png?v=Jy7B3ml8wp" />
+<link rel="manifest" href="https://www.si.edu/sites/all/themes/si_baseline/favicon/manifest.json?v=Jy7B3ml8wp" />
+<link rel="mask-icon" href="https://www.si.edu/sites/all/themes/si_baseline/favicon/safari-pinned-tab.svg?v=Jy7B3ml8wp" color="#0177a8" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="width" />
+<meta http-equiv="cleartype" content="on" />
+<meta name="author" content="Smithsonian Institution" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.si.edu/object/hope-diamond%3Anmnhmineralsciences_1001299" />
+<meta property="og:site_name" content="Smithsonian Institution" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.si.edu/object/hope-diamond%3Anmnhmineralsciences_1001299" />
+<meta property="og:title" content="Hope Diamond | Smithsonian Institution" />
+<meta property="og:image" content="https://collections.nmnh.si.edu/media/?irn=15324906" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@smithsonian" />
+<meta name="twitter:site:id" content="14199378" />
+<meta name="twitter:creator" content="@smithsonian" />
+<meta name="twitter:creator:id" content="14199378" />
+<meta name="twitter:url" content="https://www.si.edu/object/hope-diamond%3Anmnhmineralsciences_1001299" />
+<meta name="twitter:title" content="Hope Diamond | Smithsonian Institution" />
+<meta name="twitter:image" content="https://collections.nmnh.si.edu/media/?irn=15324906" />
+  <title>Hope Diamond | Smithsonian Institution</title>
+
+  <link rel="preload" href="https://use.typekit.net/qfv0ytn.css" as="style">
+  <link rel="stylesheet" href="https://use.typekit.net/qfv0ytn.css">
+
+	<link type="text/css" rel="stylesheet" href="https://www.si.edu/sites/default/files/css/css_V87EvcbNzzamTlwZWiBREpPElg0wJsrxoFPmRoQW0N0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.si.edu/sites/default/files/css/css_-Vz5GS3OtVUiF4T7qc069sDorBfq97VqbngjsocYRcQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.si.edu/sites/default/files/css/css_eoQrIhZhjdR-pvpvFnWwNYZHeUnAZpwPI6F5_sPjdqA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.si.edu/sites/default/files/css/css_VqkYt6aPnWBLlBbkgUdI9j_bk3lrEiKMPBD3Vvyywps.css" media="print" />
+  <script defer="defer" src="https://www.si.edu/sites/default/files/google_tag/www_si_edu/google_tag.script.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/modules/jquery_update/replace/jquery/1.12/jquery.min.js?v=1.12.4"></script>
+<script>document.createElement( "picture" );</script>
+<script>jQuery.migrateMute=true;jQuery.migrateTrace=false;</script>
+<script src="https://www.si.edu/sites/all/modules/jquery_update/replace/jquery-migrate/1/jquery-migrate.min.js?v=1"></script>
+<script src="https://www.si.edu/misc/jquery-extend-3.4.0.js?v=1.12.4"></script>
+<script src="https://www.si.edu/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.12.4"></script>
+<script src="https://www.si.edu/misc/jquery.once.js?v=1.2"></script>
+<script src="https://www.si.edu/misc/drupal.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/omega/omega/js/no-js.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/modules/jquery_update/js/jquery_browser.js?v=0.0.1"></script>
+<script src="https://www.si.edu/misc/form-single-submit.js?v=7.98"></script>
+<script src="https://www.si.edu/sites/all/modules/picture/picturefill/picturefill.min.js?v=3.0.1"></script>
+<script src="https://www.si.edu/sites/all/modules/picture/picture.min.js?v=7.98"></script>
+<script src="https://www.si.edu/sites/all/modules/autoupload/js/autoupload.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/modules/entityreference/js/entityreference.js?skjw7q"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/libraries/html5shiv/html5shiv.min.js?skjw7q"></script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/libraries/html5shiv/html5shiv-printshiv.min.js?skjw7q"></script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/libraries/selectivizr/selectivizr.min.js?skjw7q"></script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/libraries/respond/respond.min.js?skjw7q"></script>
+<![endif]-->
+<script src="https://www.si.edu/sites/all/modules/edan/modules/edan_record/js/plugin.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/libraries/slick/slick/slick.min.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/modules/slick/js/slick.load.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/modules/captcha/captcha.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/modules/field_group/field_group.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/modules/webform/js/webform.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/js/js-cookie/dist/js.cookie.min.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/js/si_visit_planner.behaviors.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/libraries/superfish/sftouchscreen.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/libraries/superfish/sfsmallscreen.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/libraries/superfish/supposition.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/libraries/superfish/superfish.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/modules/superfish/superfish.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/js/luminateExtend.min.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/js/modernizr-custom.min.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/js/ScrollMagic.min.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/js/uisearch.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/js/si_baseline.behaviors.js?skjw7q"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"edanRecord":{"blazy":0},"slick":{"accessibility":true,"adaptiveHeight":false,"autoplay":false,"autoplaySpeed":3000,"pauseOnHover":true,"pauseOnDotsHover":false,"arrows":true,"downArrow":false,"downArrowTarget":"","downArrowOffset":0,"centerMode":false,"centerPadding":"50px","dots":false,"dotsClass":"slick-dots","draggable":true,"fade":false,"focusOnSelect":false,"infinite":true,"initialSlide":0,"lazyLoad":"ondemand","mouseWheel":false,"randomize":false,"rows":1,"slidesPerRow":1,"slide":"","slidesToShow":1,"slidesToScroll":1,"speed":500,"swipe":true,"swipeToSlide":false,"edgeFriction":0.35,"touchMove":true,"touchThreshold":5,"useCSS":true,"cssEase":"ease","cssEaseBezier":"","cssEaseOverride":"","useTransform":true,"easing":"linear","variableWidth":false,"vertical":false,"verticalSwiping":false,"waitForAnimate":true},"better_exposed_filters":{"views":{"website_notifications":{"displays":{"block":{"filters":[]}}}}},"field_group":{"html-element":"full"},"urlIsAjaxTrusted":{"\/object\/hope-diamond%3Anmnhmineralsciences_1001299":true,"\/search":true},"siTheme":{"logo_path":"\/sites\/all\/themes\/si_baseline\/images\/logos\/logo.png"},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast","autoArrows":false,"dropShadows":false},"plugins":{"touchscreen":{"behaviour":"0","mode":"window_width","breakpoint":1200,"breakpointUnit":"px"},"smallscreen":{"mode":"window_width","breakpoint":1200,"breakpointUnit":"px","title":"Main menu"},"supposition":true}}}});</script>
+
+</head>
+<body class="html not-front not-logged-in page-object page-object-hope-diamondnmnhmineralsciences-1001299 section-object section-object">
+  <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TT2JWKJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <div class="wrapper--page wrapper--page">
+      <header class="l-header " role="banner">
+              <div class="l-header-preface-wrapper">
+          <div class="l-container">
+                              <div class="l-region l-region--header-preface-right">
+    <div class="inner">
+      <div id="block-edan-searchtab-edan-searchtab-block-search-form" class="block block--edan-searchtab block--edan-searchtab-edan-searchtab-block-search-form block--edan-searchtab-edan-searchtab-block-search-form">
+        <h2 class="element-invisible block__title block__title">Search</h2>
+        <form class="edan-search-form edan-searchtab-search-form-block search-form edan-searchtab-search-form" autocomplete="off" action="/search" method="post" id="edan-searchtab-search-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-edan-q">
+  <label class="element-invisible" for="edit-edan-q">Search </label>
+ <input placeholder="Enter your search terms" type="text" id="edit-edan-q" name="edan_q" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<div class="si-email-textfield" tabindex="-1" aria-hidden="true"><div class="form-item form-type-textfield form-item-email-edan">
+  <label for="edit-email-edan">What is 2+5? </label>
+ <input autocomplete="off" tabindex="-1" type="text" id="edit-email-edan" name="email_edan" value="" size="15" maxlength="128" class="form-text" />
+</div>
+</div><input type="hidden" name="form_build_id" value="form-K_Uq7S9PIdwpSuJGH-3avS0gzz8KdmvxU1Sc8s9tprk" />
+<input type="hidden" name="form_id" value="edan_searchtab_search_form" />
+<div class="form-actions form-wrapper" id="edit-actions"><button class="submit form-submit search btn-svg" type="submit" id="edit-submit" name="op" value="Search"> 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="edit-submit--search"><title id="edit-submit--search">Search</title> <path class="fill" d="M15.5,14H14.71l-0.28-.27a6.51,6.51,0,1,0-.7.7L14,14.71V15.5l5,5L20.49,19Zm-6,0A4.5,4.5,0,1,1,14,9.5,4.49,4.49,0,0,1,9.5,14Z" fill="#fff" /> <path d="M0,0H24V24H0V0Z" fill="none" /> </svg>
+</button></div></div></form></div>
+<div id="block-si-custom-si-my-visit-link" class="block block--si-custom block--si-custom-si-my-visit-link block--si-custom-si-my-visit-link">
+          <a href="/myvisit" class="si-myvisit-link"><span class="fa fa-heart" aria-hidden="true"></span>My Visit</a></div>
+<div id="block-block-13" class="block block--block block--block-13 block--block-13">
+          <a class="donate-btn" href="http://go.si.edu/si-give" target="_blank">Donate</a>
+</div>
+    </div>
+
+  </div>
+
+          </div>
+        </div>
+            <div class="l-header-inner l-container">
+        <div class="l-branding">
+                      <a href="/" title="Home" rel="home" class="site-logo"><img src="/sites/all/themes/si_baseline/images/logos/logo.svg" alt="Home" />
+                                <span class="sr-only">Smithsonian Institution</span>
+                          </a>
+            
+
+        
+                  </div>
+          <div class="l-region l-region--header">
+    <div id="block-superfish-1" class="block block--superfish block--superfish-1 robots-noindex block--superfish-1 robots-noindex">
+        <h2 class="block__title element-invisible block__title element-invisible">Site Navigation</h2>
+        <nav aria-labelledby="block-superfish-1"><nav aria-labelledby="block-superfish-1"><ul  id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none"><li id="menu-1583-1" class="first odd sf-item-1 sf-depth-1 menuparent"><a href="/visit" class="sf-depth-1 menuparent">Visit</a><ul><li id="menu-16408-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/visit/hours" class="sf-depth-2">Museums and Zoo Hours</a></li><li id="menu-3873-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/visit/tips" class="sf-depth-2">Entry and Guidelines</a></li><li id="menu-12976-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/visit/maps" class="sf-depth-2">Maps and Brochures</a></li><li id="menu-1862-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/dining" class="sf-depth-2">Dining and Shopping</a></li><li id="menu-12091-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/visit/accessibility" class="sf-depth-2">Accessibility</a></li><li id="menu-3879-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/visit/kids" class="sf-depth-2">Visiting with Kids</a></li><li id="menu-3880-1" class="last odd sf-item-7 sf-depth-2 menuparent"><a href="/visit/groups" class="sf-depth-2 menuparent">Group Visits</a><ul><li id="menu-3594-1" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children"><a href="/groupsales" class="sf-depth-3">Group Sales</a></li></ul></li></ul></li><li id="menu-3462-1" class="middle even sf-item-2 sf-depth-1 menuparent"><a href="/whats-on" class="sf-depth-1 menuparent">What&#039;s On</a><ul><li id="menu-3905-1" class="first odd sf-item-1 sf-depth-2 menuparent"><a href="/exhibitions" class="sf-depth-2 menuparent">Exhibitions</a><ul><li id="menu-4468-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/exhibitions" class="sf-depth-3">Current</a></li><li id="menu-4469-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/exhibitions/upcoming" class="sf-depth-3">Upcoming</a></li><li id="menu-4470-1" class="last odd sf-item-3 sf-depth-3 sf-no-children"><a href="/exhibitions/past" class="sf-depth-3">Past</a></li></ul></li><li id="menu-4104-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/events/today" class="sf-depth-2">Today&#039;s Events</a></li><li id="menu-14938-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/events/online" class="sf-depth-2">Online Events</a></li><li id="menu-4113-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/events" class="sf-depth-2">All Events</a></li><li id="menu-3466-1" class="last odd sf-item-5 sf-depth-2 sf-no-children"><a href="/imax" class="sf-depth-2">IMAX &amp; Planetarium</a></li></ul></li><li id="menu-3433-1" class="middle odd sf-item-3 sf-depth-1 menuparent"><a href="/explore" class="sf-depth-1 menuparent">Explore</a><ul><li id="menu-3764-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/explore/art" class="sf-depth-2">- Art &amp; Design</a></li><li id="menu-3079-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/explore/history" class="sf-depth-2">- History &amp; Culture</a></li><li id="menu-3765-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/explore/science" class="sf-depth-2">- Science &amp; Nature</a></li><li id="menu-3129-1" class="middle even sf-item-4 sf-depth-2 menuparent"><a href="/collections" class="sf-depth-2 menuparent">Collections</a><ul><li id="menu-14554-1" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children"><a href="/openaccess" class="sf-depth-3">Open Access</a></li></ul></li><li id="menu-3463-1" class="middle odd sf-item-5 sf-depth-2 menuparent"><a href="/researchers" class="sf-depth-2 menuparent">Research Resources</a><ul><li id="menu-3907-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="https://library.si.edu/" class="sf-depth-3">Libraries</a></li><li id="menu-3419-1" class="last even sf-item-2 sf-depth-3 menuparent"><a href="/siasc" class="sf-depth-3 menuparent">Archives</a><ul><li id="menu-3572-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/siasc/si_archives" class="sf-depth-4">Smithsonian Institution Archives</a></li><li id="menu-3428-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/siasc/nasm_archives" class="sf-depth-4">Air and Space Museum</a></li><li id="menu-3420-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children"><a href="/siasc/acma" class="sf-depth-4">Anacostia Community Museum</a></li><li id="menu-3571-1" class="middle even sf-item-4 sf-depth-4 sf-no-children"><a href="/siasc/saam" class="sf-depth-4">American Art Museum</a></li><li id="menu-3422-1" class="middle odd sf-item-5 sf-depth-4 sf-no-children"><a href="/siasc/aaa" class="sf-depth-4">Archives of American Art</a></li><li id="menu-3421-1" class="middle even sf-item-6 sf-depth-4 sf-no-children"><a href="/siasc/american_gardens" class="sf-depth-4">Archives of American Gardens</a></li><li id="menu-3423-1" class="middle odd sf-item-7 sf-depth-4 sf-no-children"><a href="/siasc/archives_center" class="sf-depth-4">American History Museum</a></li><li id="menu-3468-1" class="middle even sf-item-8 sf-depth-4 sf-no-children"><a href="/siasc/nmai" class="sf-depth-4">American Indian Museum</a></li><li id="menu-3425-1" class="middle odd sf-item-9 sf-depth-4 sf-no-children"><a href="/siasc/freer_sackler" class="sf-depth-4">Asian Art Museum Archives</a></li><li id="menu-3424-1" class="middle even sf-item-10 sf-depth-4 sf-no-children"><a href="/siasc/eepa_nmafa" class="sf-depth-4">Eliot Elisofon Photographic Archives, African Art</a></li><li id="menu-3426-1" class="middle odd sf-item-11 sf-depth-4 sf-no-children"><a href="/siasc/hmsg_archive" class="sf-depth-4">Hirshhorn Archive</a></li><li id="menu-3467-1" class="middle even sf-item-12 sf-depth-4 sf-no-children"><a href="/siasc/naa" class="sf-depth-4">National Anthropological Archives</a></li><li id="menu-3477-1" class="middle odd sf-item-13 sf-depth-4 sf-no-children"><a href="/siasc/npg" class="sf-depth-4">National Portrait Gallery</a></li><li id="menu-3478-1" class="middle even sf-item-14 sf-depth-4 sf-no-children"><a href="/siasc/rrfa_archive" class="sf-depth-4">Ralph Rinzler Archives, Folklife</a></li><li id="menu-3573-1" class="last odd sf-item-15 sf-depth-4 sf-no-children"><a href="/siasc/si_libraries" class="sf-depth-4">Libraries&#039; Special Collections</a></li></ul></li></ul></li><li id="menu-3878-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/podcasts" class="sf-depth-2">Podcasts</a></li><li id="menu-3877-1" class="last odd sf-item-7 sf-depth-2 sf-no-children"><a href="/mobile" class="sf-depth-2">Mobile Apps</a></li></ul></li><li id="menu-3769-1" class="middle even sf-item-4 sf-depth-1 menuparent"><a href="/learn" class="sf-depth-1 menuparent">Learn</a><ul><li id="menu-20305-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/learn/parents-and-caregivers" class="sf-depth-2">For Caregivers</a></li><li id="menu-12928-1" class="middle even sf-item-2 sf-depth-2 menuparent"><a href="/educators" class="sf-depth-2 menuparent">For Educators</a><ul><li id="menu-20221-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/educators/art-resources" class="sf-depth-3">Art &amp; Design Resources</a></li><li id="menu-20224-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/educators/science-resources" class="sf-depth-3">Science &amp; Nature Resources</a></li><li id="menu-20227-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/educators/social-studies-resources" class="sf-depth-3">Social Studies &amp; Civics Resources</a></li><li id="menu-12937-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/educators/professional-development" class="sf-depth-3">Professional Development</a></li><li id="menu-12943-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/educators/events" class="sf-depth-3">Events for Educators</a></li><li id="menu-12934-1" class="last even sf-item-6 sf-depth-3 sf-no-children"><a href="/visit/field-trip" class="sf-depth-3">Field Trips</a></li></ul></li><li id="menu-20308-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/learn/students" class="sf-depth-2">For Students</a></li><li id="menu-20314-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/learn/academics" class="sf-depth-2">For Academics</a></li><li id="menu-20311-1" class="last odd sf-item-5 sf-depth-2 sf-no-children"><a href="/learn/lifelong-learners" class="sf-depth-2">For Lifelong Learners</a></li></ul></li><li id="menu-17116-1" class="middle odd sf-item-5 sf-depth-1 menuparent"><a href="/support" class="sf-depth-1 menuparent">Support Us</a><ul><li id="menu-17119-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="https://support.si.edu/site/Donation2/?df_id=18123&amp;18123.donation=form1&amp;s_formType=j&amp;s_src=Z0000AW&amp;s_subsrc=0000--eg--oa-oef--web--si-edu--top-nav--app--acq------support-nav--ow--&amp;utm_campaign=0000--eg--oa-oef--web--si-edu--top-nav--app--acq------support-" class="sf-depth-2">Become a Member</a></li><li id="menu-17122-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="https://support.si.edu/site/Donation2/?df_id=18123&amp;18123.donation=form1&amp;s_formType=r&amp;s_src=Z0000RW&amp;s_subsrc=0000--eg--oa-oef--web--si-edu--top-nav--app--rew------support-nav--ow--&amp;utm_campaign=0000--eg--oa-oef--web--si-edu--top-nav--app--rew------support-" class="sf-depth-2">Renew Membership</a></li><li id="menu-17125-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="https://support.si.edu/site/Donation2/?df_id=18162&amp;18162.donation=form1&amp;s_formType=c&amp;s_pFreq=o&amp;s_pMF=0&amp;s_src=Z0000PW&amp;s_subsrc=0000--eg--oa-oef--web--si-edu--top-nav--app--app------support-nav--ow--&amp;utm_campaign=0000--eg--oa-oef--web--si-edu--top-nav--app-" class="sf-depth-2">Make a Gift</a></li><li id="menu-3768-1" class="last even sf-item-4 sf-depth-2 menuparent"><a href="/volunteer" class="sf-depth-2 menuparent">Volunteer</a><ul><li id="menu-3475-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/Volunteer/Behind-the-Scenes-Volunteer" class="sf-depth-3">Behind-the-Scenes</a></li><li id="menu-3473-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/volunteer/DigitalVolunteers" class="sf-depth-3">Digital Volunteers</a></li><li id="menu-3476-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/volunteer/museum-information-desk" class="sf-depth-3">Museum Information Desk</a></li><li id="menu-3665-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/volunteer/telephone-information" class="sf-depth-3">Smithsonian Call Center</a></li><li id="menu-3472-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/volunteer/docent" class="sf-depth-3">Docent Programs</a></li><li id="menu-3474-1" class="last even sf-item-6 sf-depth-3 sf-no-children"><a href="/volunteer/citizenscience" class="sf-depth-3">Participatory Science</a></li></ul></li></ul></li><li id="menu-1582-1" class="last even sf-item-6 sf-depth-1 menuparent"><a href="/about" class="sf-depth-1 menuparent">About</a><ul><li id="menu-5771-1" class="first odd sf-item-1 sf-depth-2 menuparent"><a href="/about/administration" class="sf-depth-2 menuparent">Our Organization</a><ul><li id="menu-3398-1" class="first odd sf-item-1 sf-depth-3 menuparent"><a href="/regents" class="sf-depth-3 menuparent">Board of Regents</a><ul><li id="menu-4682-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/regents/members" class="sf-depth-4">Members</a></li><li id="menu-4683-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/regents/committees" class="sf-depth-4">Committees</a></li><li id="menu-4684-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children"><a href="/regents/otherreading" class="sf-depth-4">Reading Room</a></li><li id="menu-4686-1" class="middle even sf-item-4 sf-depth-4 sf-no-children"><a href="/regents/bylaws" class="sf-depth-4">Bylaws, Policies and Procedures</a></li><li id="menu-4679-1" class="middle odd sf-item-5 sf-depth-4 sf-no-children"><a href="/regents/schedules-and-agendas" class="sf-depth-4">Schedules and Agendas</a></li><li id="menu-4680-1" class="middle even sf-item-6 sf-depth-4 sf-no-children"><a href="/regents/minutes" class="sf-depth-4">Meeting Minutes</a></li><li id="menu-4678-1" class="middle odd sf-item-7 sf-depth-4 sf-no-children"><a href="/regents/actions" class="sf-depth-4">Actions</a></li><li id="menu-4681-1" class="middle even sf-item-8 sf-depth-4 sf-no-children"><a href="/regents/webcasts" class="sf-depth-4">Webcasts</a></li><li id="menu-4685-1" class="last odd sf-item-9 sf-depth-4 sf-no-children"><a href="/regents/contact" class="sf-depth-4">Contact</a></li></ul></li><li id="menu-4480-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/about/museums" class="sf-depth-3">Museums and Zoo</a></li><li id="menu-1828-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/researchcenters" class="sf-depth-3">Research Centers</a></li><li id="menu-3651-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/cultural-centers" class="sf-depth-3">Cultural Centers</a></li><li id="menu-3166-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/education" class="sf-depth-3">Education Centers</a></li><li id="menu-3406-1" class="middle even sf-item-6 sf-depth-3 menuparent"><a href="/ogc" class="sf-depth-3 menuparent">General Counsel</a><ul><li id="menu-3407-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/ogc/legalhistory" class="sf-depth-4">Legal History</a></li><li id="menu-3408-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/ogc/internships-office-general-counsel" class="sf-depth-4">Internships</a></li><li id="menu-3409-1" class="middle odd sf-item-3 sf-depth-4 menuparent"><a href="/ogc/records-requests" class="sf-depth-4 menuparent">Records Requests</a><ul><li id="menu-4886-1" class="firstandlast odd sf-item-1 sf-depth-5 sf-no-children"><a href="/ogc/records-reading-room" class="sf-depth-5">Reading Room</a></li></ul></li><li id="menu-3410-1" class="middle even sf-item-4 sf-depth-4 sf-no-children"><a href="/ogc/tort-claim" class="sf-depth-4">Tort Claim</a></li><li id="menu-4479-1" class="middle odd sf-item-5 sf-depth-4 sf-no-children"><a href="/ogc-page/responding-subpoenas" class="sf-depth-4">Subpoenas &amp; Testimonies</a></li><li id="menu-3411-1" class="last even sf-item-6 sf-depth-4 sf-no-children"><a href="/ogc/office-general-counsel-events" class="sf-depth-4">Events</a></li></ul></li><li id="menu-19006-1" class="middle odd sf-item-7 sf-depth-3 menuparent"><a href="/ohr" class="sf-depth-3 menuparent">Office of Human Resources</a><ul><li id="menu-14956-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/ohr/benefits" style="hide" class="sf-depth-4">Employee Benefits</a></li><li id="menu-14962-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/ohr/howtoapply" class="sf-depth-4">How to Apply</a></li><li id="menu-16354-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children"><a href="/ohr/jobs" class="sf-depth-4">Job Opportunities</a></li><li id="menu-14959-1" class="middle even sf-item-4 sf-depth-4 sf-no-children"><a href="/ohr/disabled" class="sf-depth-4">Job Seekers with Disabilities</a></li><li id="menu-14965-1" class="middle odd sf-item-5 sf-depth-4 sf-no-children"><a href="/ohr/faq" class="sf-depth-4">Frequently Asked Questions</a></li><li id="menu-19390-1" class="middle even sf-item-6 sf-depth-4 sf-no-children"><a href="/si-civil-program" class="sf-depth-4">SI Civil Program</a></li><li id="menu-14968-1" class="last odd sf-item-7 sf-depth-4 sf-no-children"><a href="/ohr/contactus" class="sf-depth-4">Contact Us</a></li></ul></li><li id="menu-5645-1" class="middle even sf-item-8 sf-depth-3 menuparent"><a href="/oeesd" class="sf-depth-3 menuparent">Equal Employment Office</a><ul><li id="menu-5646-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/oeesd/eeocomplaintprocess" class="sf-depth-4">EEO Complaint Process</a></li><li id="menu-5647-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/oeesd/IndividualswithDisabilities" class="sf-depth-4">Individuals with Disabilities</a></li><li id="menu-5648-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children"><a href="/oeesd/SpecialEmphasisProgram" class="sf-depth-4">Special Emphasis Program</a></li><li id="menu-5649-1" class="last even sf-item-4 sf-depth-4 menuparent"><a href="/oeesd/supplierdiversity" class="sf-depth-4 menuparent">Supplier Diversity Program</a><ul><li id="menu-5767-1" class="first odd sf-item-1 sf-depth-5 sf-no-children"><a href="/oeesd/supplierdiversity_doingbusinesswithsi" class="sf-depth-5">Doing Business with Us</a></li><li id="menu-5768-1" class="middle even sf-item-2 sf-depth-5 sf-no-children"><a href="/oeesd/supplierdiversity_policiesandprocedures" class="sf-depth-5">Policies and Procedures</a></li><li id="menu-5650-1" class="last odd sf-item-3 sf-depth-5 sf-no-children"><a href="/oeesd/SupplierDiversity_ExternalResources" class="sf-depth-5">Additional Resources</a></li></ul></li></ul></li><li id="menu-19369-1" class="last odd sf-item-9 sf-depth-3 menuparent"><a href="/osp" class="sf-depth-3 menuparent">Sponsored Projects</a><ul><li id="menu-19372-1" class="first odd sf-item-1 sf-depth-4 menuparent"><a href="/osp/policies" class="sf-depth-4 menuparent">Policies</a><ul><li id="menu-20461-1" class="first odd sf-item-1 sf-depth-5 sf-no-children"><a href="/osp/policies/combating-trafficking-persons" class="sf-depth-5">Combating Trafficking in Persons</a></li><li id="menu-19381-1" class="middle even sf-item-2 sf-depth-5 sf-no-children"><a href="/osp/policies/animal-care" class="sf-depth-5">Animal Care and Use</a></li><li id="menu-19378-1" class="last odd sf-item-3 sf-depth-5 sf-no-children"><a href="/osp/policies/human-subject-research" class="sf-depth-5">Human Research</a></li></ul></li><li id="menu-19375-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/osp/reports" class="sf-depth-4">Reports</a></li><li id="menu-19366-1" class="last odd sf-item-3 sf-depth-4 sf-no-children"><a href="/osp/internships" class="sf-depth-4">Internships</a></li></ul></li></ul></li><li id="menu-10267-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/about/leadership" class="sf-depth-2">Our Leadership</a></li><li id="menu-3399-1" class="middle odd sf-item-3 sf-depth-2 menuparent"><a href="/about/reports" class="sf-depth-2 menuparent">Reports and Plans</a><ul><li id="menu-3397-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/about/annual-report" class="sf-depth-3">Annual Reports</a></li><li id="menu-5118-1" class="middle even sf-item-2 sf-depth-3 menuparent"><a href="/dashboard" class="sf-depth-3 menuparent">Metrics Dashboard</a><ul><li id="menu-5119-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/dashboard" class="btn btn-alt btn-large sf-depth-4">Dashboard Home</a></li><li id="menu-13345-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/dashboard/virtual-smithsonian" class="btn btn-alt btn-large sf-depth-4">Virtual Smithsonian</a></li><li id="menu-5122-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children"><a href="/dashboard/public-engagement" class="btn btn-alt btn-large sf-depth-4">Public Engagement</a></li><li id="menu-5121-1" class="middle even sf-item-4 sf-depth-4 sf-no-children"><a href="/dashboard/national-collections" class="btn btn-alt btn-large sf-depth-4">National Collections</a></li><li id="menu-5125-1" class="middle odd sf-item-5 sf-depth-4 sf-no-children"><a href="/dashboard/research" class="btn btn-alt btn-large sf-depth-4">Research</a></li><li id="menu-5123-1" class="middle even sf-item-6 sf-depth-4 sf-no-children"><a href="/dashboard/people-operations" class="btn btn-alt btn-large sf-depth-4">People &amp; Operations</a></li><li id="menu-5124-1" class="last odd sf-item-7 sf-depth-4 sf-no-children"><a href="/dashboard/crossing-boundaries" class="btn btn-alt btn-large sf-depth-4">One Smithsonian</a></li></ul></li><li id="menu-6287-1" class="last odd sf-item-3 sf-depth-3 sf-no-children"><a href="/strategicplan-2027" class="sf-depth-3">Strategic Plan</a></li></ul></li><li id="menu-6772-1" class="last even sf-item-4 sf-depth-2 menuparent"><a href="/newsdesk" class="sf-depth-2 menuparent">Newsdesk</a><ul><li id="menu-9097-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/newsdesk/releases" class="sf-depth-3">News Releases</a></li><li id="menu-9103-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/newsdesk/media-contacts" class="sf-depth-3">Media Contacts</a></li><li id="menu-9106-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/newsdesk/photos" class="sf-depth-3">Photos and Video</a></li><li id="menu-9109-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/newsdesk/kits" class="sf-depth-3">Media Kits</a></li><li id="menu-9112-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/newsdesk/factsheets" class="sf-depth-3">Fact Sheets</a></li><li id="menu-9241-1" class="middle even sf-item-6 sf-depth-3 sf-no-children"><a href="/newsdesk/about/stats" class="sf-depth-3">Visitor Stats</a></li><li id="menu-12094-1" class="middle odd sf-item-7 sf-depth-3 sf-no-children"><a href="/newsdesk/admin-bios" class="sf-depth-3">Secretary and Admin Bios</a></li><li id="menu-9115-1" class="last even sf-item-8 sf-depth-3 sf-no-children"><a href="/newsdesk/filming-requests" class="sf-depth-3">Filming Requests</a></li></ul></li></ul></li></ul></nav></nav></div>
+  </div>
+      </div>
+          </header>
+      <div class="l-content-wrapper">
+            <a id="main-content"></a>
+      <div class="l-main clearfix" role="main">
+                                                        <div class="edan-record edanmdm edan-object has-usage has-related has-media">
+      <div  ogmt-id="edanmdm-nmnhmineralsciences_1001299" class="edan-search-result  in-unit has-media has-media wrapper-edanmdm no-3d-object" id="edanmdm-nmnhmineralsciences_1001299" data-recordId="nmnhmineralsciences_1001299">
+
+      <section class="record-section">
+        <div class="pageHeader">
+<!--	        --><!--						<div class="back-link"><a href="--><!--">-->
+<!--								 --><!--							</a></div>-->
+<!--	        -->          <div class="page-title has-share-buttons">
+            <h1>Hope Diamond</h1>
+                          <div class="panel-pane pane-entity-field pane-node-field-tagline">
+                <div class="field field--name-field-tagline field--type-text field--label-hidden">
+                  <a href="/about/natural-history-museum">National Museum of Natural History</a>
+                </div>
+              </div>
+            
+          </div>
+          <div class="wrapper--preface-buttons no-backlink">
+            <div class="link-wrapper">
+
+                          </div>
+          </div>
+        </div>
+
+        <div id="edanWrapper" class="recordDetails tabWrapper">
+
+                  <div class="tabHeading">
+            <button id="headingDetails" class="btn btn-tab" type="button" data-toggle="collapse" data-target="#edanDetails" aria-expanded="true" aria-controls="edanDetails" data-parent="#edanWrapper">
+              <span>Details</span>
+            </button>
+            <button id="headingRelated" class="btn btn-tab collapsed" type="button" data-toggle="collapse" data-target="#edanRelated" aria-expanded="false" aria-controls="edanRelated" data-parent="#edanWrapper">
+              <span>Related</span>
+            </button>
+        </div>
+
+                          <div id="edanDetails" class="collapse show tab-pane" aria-labelledby="headingDetails" data-parent="#edanWrapper">                  <h2>Object Details</h2>	        			        				        									<dl class="field field-freetextname">
+						        							        												<dt>Taxon</dt>
+								        							        							        												<dd>Diamond - Primary Gem</dd>
+							        						        									</dl>
+				        			        				        									<dl class="field field-freetextnotes">
+						        							        												<dt>Record Last Modified</dt>
+								        							        							        												<dd>26 Sep 2022</dd>
+							        						        							        												<dt>Specimen Count</dt>
+								        							        							        												<dd>1</dd>
+							        						        									</dl>
+				        			        				        									<dl class="field field-freetextidentifier">
+						        							        												<dt>Other Numbers</dt>
+								        							        							        												<dd>IGSN : NHB002JKJ</dd>
+							        						        							        												<dt>USNM Number</dt>
+								        							        							        												<dd>NMNH G3551-00</dd>
+							        						        									</dl>
+				        			        				        									<dl class="field field-freetextphysicaldescription">
+						        							        												<dt>Color</dt>
+								        							        							        												<dd>Dark Gray Blue</dd>
+							        						        							        												<dt>Cut</dt>
+								        							        							        												<dd>Modified Antique Cushion</dd>
+							        						        							        												<dt>Jewelery Type</dt>
+								        							        							        												<dd>Necklace</dd>
+							        						        							        												<dt></dt>
+								        							        							        												<dd>Cartier, Inc.</dd>
+							        						        							        												<dt>Weight</dt>
+								        							        							        												<dd>45.52 ct</dd>
+							        						        									</dl>
+				        			        				        									<dl class="field field-freetextplace">
+						        							        												<dt>Place</dt>
+								        							        							        												<dd>India, Asia</dd>
+							        						        									</dl>
+				        			        				        									<dl class="field field-freetextsetname">
+						        							        												<dt>See more items in</dt>
+								        							        							        												<dd>Mineral Sciences</dd>
+							        						        							        							        												<dd>Gems</dd>
+							        						        									</dl>
+				        			        				        									<dl class="field field-freetextdatasource">
+						        							        							        												<dd>NMNH - Mineral Sciences Dept.</dd>
+							        						        									</dl>
+				        			        				        									<dl class="field field-record-id">
+						        							        												<dt>Record ID</dt>
+								        							        							        												<dd>nmnhmineralsciences_1001299</dd>
+							        						        									</dl>
+				        			        				        									<dl class="field field-metadata-usage">
+						        							        												<dt>Metadata Usage (text)</dt>
+								        							        							        												<dd>CC0</dd>
+							        						        									</dl>
+				        			        				        									<dl class="field field-guid">
+						        							        												<dt>GUID (Link to Original Record)</dt>
+								        							        							        												<dd><a href="http://n2t.net/ark:/65665/3985b643b-fb12-4268-9f1b-2a254447208f" target="_blank">http://n2t.net/ark:/65665/3985b643b-fb12-4268-9f1b-2a254447208f</a></dd>
+							        						        									</dl>
+				        			        				        									<div class="field field-teaser">
+						        									</div>
+				        			        	        	                              </div>
+                    <div id="edanRelated" class="collapse tab-pane" aria-labelledby="headingRelated" data-parent="#edanWrapper">
+						<h2>Related Content</h2>
+		          <div class="edan-results-wrapper search-results-container view--list">
+    <ul class="search-results">
+
+              <li class="edan-search-result spacing-bottom">
+          <div class="node--teaser node--teaser-list has-media">
+            <a href="/spotlight/geogallery" class="inner">
+                            <div class="b-media-wrapper field--type-image">
+                <img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=https://collections.nmnh.si.edu/media/?irn=10963844" alt="" />              </div>
+              
+              <div class="b-text-wrapper">
+                <h3 class="title">
+                  Minerals and Gems                </h3>
+                                </div>
+            </a>
+          </div>
+
+        </li>
+
+              <li class="edan-search-result spacing-bottom">
+          <div class="node--teaser node--teaser-list has-media">
+            <a href="/spotlight/hope-diamond" class="inner">
+                            <div class="b-media-wrapper field--type-image">
+                <img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=https://www.si.edu/sites/default/files/blog/hope-1024x6871.jpg" alt="" />              </div>
+              
+              <div class="b-text-wrapper">
+                <h3 class="title">
+                  The Hope Diamond                </h3>
+                                </div>
+            </a>
+          </div>
+
+        </li>
+
+              <li class="edan-search-result spacing-bottom">
+          <div class="node--teaser node--teaser-list has-media">
+            <a href="/spotlight/color-smithsonian/blue" class="inner">
+                            <div class="b-media-wrapper field--type-image">
+                <img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=CHSDM-297456_01" alt="" />              </div>
+              
+              <div class="b-text-wrapper">
+                <h3 class="title">
+                  Smithsonian Color Journey:Untitled                </h3>
+                                </div>
+            </a>
+          </div>
+
+        </li>
+
+          </ul>
+  </div>
+						</div>
+						
+        </div>
+        					<div class="edan-media-wrapper page" data-viewer="page">
+                            <div  class="media-container media--no-openaccess has-ids has-viewer type--images" data-edan="{&quot;idsId&quot;:&quot;https:\/\/collections.nmnh.si.edu\/media\/?irn=15324906&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;images&quot;,&quot;has_ids&quot;:true,&quot;dev&quot;:false}">
+    <div class="wrapper media">
+      <figure class="image-wrapper" itemtype="http://schema.org/ImageObject">
+        <span class="media-inner"><a href="#" class="modal-trigger image" type="button" data-toggle="modal" data-target="#viewerModal" data-source="https://www.si.edu/object/viewer/edanmdm-nmnhmineralsciences_1001299"><img src="https://ids.si.edu/ids/deliveryService?irn=15324906&amp;max_w=800&amp;id=https://collections.nmnh.si.edu/media/?irn=15324906" width="" height="" alt="" title="" data-ids="https://collections.nmnh.si.edu/media/?irn=15324906" id="edan-image" /></a></span>
+                </figure>
+				<div id="viewerContainer"><div class="media-inner"><iframe width="100%" height="100%" src=""></iframe></div></div>
+          </div>
+
+      <div  data-idsid="https://collections.nmnh.si.edu/media/?irn=15324906" class="media-metadata">
+	
+	<div class="accordion" id="media-tab-edanmdm-nmnhmineralsciences_1001299"
+			 aria-live="polite">
+		<div class="inner">
+      			<div class="card-header" data-popover-element="heading-tab-usage">
+				<button  id="heading-tab-usage" tabindex="0" type="button" data-parent="#media-tab-edanmdm-nmnhmineralsciences_1001299" data-target="#tab-usage" data-placement="bottom" data-offset="0,8px" class="icon btn btn-popover btn-usage">
+                        <span class="usage--cc0"><span
+										class="element-invisible">CC0</span><svg version="1.1" id="cc0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 76 36" style="enable-background:new 0 0 76 36;" xml:space="preserve" aria-labelledby="cc0" role="img">
+	 <title id="cc0">Creative Commons - No Rights Reserved icon</title>
+<circle class="svg-bg" cx="18.2" cy="18" r="15.8"/>
+<path class="fill" d="M18,0.5c4.7-0.1,9.2,1.8,12.5,5.1c1.6,1.6,2.9,3.5,3.7,5.6c0.9,2.1,1.3,4.4,1.3,6.7c0,2.3-0.4,4.6-1.3,6.7
+	c-0.8,2.1-2.1,4-3.7,5.5c-1.7,1.7-3.6,3-5.8,3.9c-2.1,1-4.4,1.5-6.7,1.5c-2.3,0-4.5-0.4-6.6-1.3c-2.1-0.9-4-2.2-5.7-3.8
+	c-1.7-1.6-3-3.5-3.8-5.7C1,22.6,0.6,20.3,0.5,18c0-2.3,0.4-4.6,1.3-6.7C2.7,9.2,4,7.2,5.7,5.6C8.9,2.2,13.4,0.4,18,0.5z M18,3.7
+	c-3.8-0.1-7.5,1.4-10.1,4.2c-1.3,1.3-2.4,2.9-3.1,4.6c-0.7,1.7-1.1,3.6-1.1,5.5c0,1.9,0.4,3.7,1.1,5.4c0.7,1.8,1.8,3.4,3.2,4.7
+	c1.3,1.4,2.9,2.4,4.7,3.1c1.7,0.7,3.5,1.1,5.4,1.1c3.9,0,7.6-1.6,10.3-4.3c2.7-2.6,4.2-6.2,4.1-10c0-1.9-0.4-3.8-1.1-5.5
+	c-0.7-1.7-1.7-3.3-3.1-4.6C25.6,5.2,21.9,3.6,18,3.7z M17.8,15.1l-2.3,1.2c-0.2-0.4-0.5-0.8-0.9-1.1c-0.3-0.2-0.6-0.3-1-0.3
+	c-1.6,0-2.3,1-2.3,3.1c0,0.8,0.2,1.6,0.6,2.2c0.4,0.6,1.1,0.9,1.8,0.8c1,0,1.9-0.6,2.2-1.5l2.2,1.1c-0.4,0.8-1.1,1.5-1.9,2
+	c-0.8,0.5-1.8,0.7-2.7,0.7c-1.4,0-2.8-0.5-3.8-1.4c-1-1.1-1.5-2.5-1.4-4c-0.1-1.5,0.5-2.9,1.5-4c1-1,2.3-1.5,3.7-1.5
+	C15.3,12.5,16.9,13.5,17.8,15.1z M27.9,15.1l-2.3,1.2c-0.2-0.4-0.5-0.8-0.9-1.1c-0.3-0.2-0.6-0.3-1-0.3c-1.6,0-2.3,1-2.3,3.1
+	c0,0.8,0.2,1.6,0.6,2.2c0.4,0.5,1.1,0.8,1.8,0.8c1,0,1.9-0.6,2.2-1.5l2.2,1.1c-0.4,0.8-1.1,1.5-1.9,2c-0.8,0.5-1.8,0.7-2.7,0.7
+	c-1.4,0-2.8-0.5-3.8-1.4c-1-1.1-1.5-2.5-1.4-4c-0.1-1.5,0.5-2.9,1.5-4c1-1,2.3-1.5,3.7-1.5C25.4,12.5,27,13.5,27.9,15.1z"/>
+<circle class="svg-bg" cx="57.9" cy="18.2" r="16.5"/>
+<path id="text2809" class="fill" d="M58,7.9c-5.8,0-7.2,5.5-7.2,10.1s1.5,10.1,7.2,10.1s7.2-5.5,7.2-10.1S63.8,7.9,58,7.9z M58,11.7
+	c0.2,0,0.4,0,0.6,0.1c0.5,0.4,0.6,1,0.2,1.5L55,20.4c-0.1-0.8-0.1-1.6-0.1-2.4C54.9,16,55,11.7,58,11.7z M60.9,15c0.2,1,0.2,2,0.2,3
+	c0,2-0.1,6.3-3.1,6.3c-0.2,0-0.4,0-0.6-0.1h-0.1c-0.1,0-0.1,0-0.2-0.1c-0.7-0.3-1.1-0.8-0.5-1.7L60.9,15z"/>
+<path id="path2815" class="fill" d="M58,0.5c-4.6-0.1-9.1,1.8-12.3,5.1c-1.7,1.7-3,3.6-3.9,5.8c-0.9,2.1-1.3,4.3-1.3,6.6c0,2.3,0.4,4.6,1.3,6.7
+	c0.9,2.1,2.2,4.1,3.8,5.7c1.6,1.7,3.6,3,5.7,3.8c2.1,0.9,4.4,1.3,6.7,1.3c2.3,0,4.6-0.5,6.7-1.3c2.2-0.9,4.1-2.2,5.8-3.9
+	c1.6-1.5,2.9-3.4,3.7-5.5c0.9-2.2,1.3-4.5,1.3-6.8c0-2.3-0.4-4.6-1.3-6.7c-0.9-2.1-2.1-4-3.7-5.6C67.2,2.3,62.7,0.4,58,0.5z M58,3.6
+	c3.8-0.1,7.5,1.5,10.1,4.2c1.3,1.3,2.4,2.9,3.1,4.6c0.7,1.7,1.1,3.6,1.1,5.5c0.1,3.8-1.4,7.4-4.1,10c-1.4,1.4-3,2.4-4.8,3.2
+	c-1.7,0.7-3.5,1.1-5.4,1.1c-1.9,0-3.7-0.4-5.4-1.1c-1.7-0.7-3.3-1.8-4.7-3.1c-1.4-1.3-2.4-2.9-3.2-4.7c-0.7-1.7-1.1-3.5-1.1-5.4
+	c0-1.9,0.4-3.7,1.1-5.4c0.7-1.8,1.8-3.4,3.2-4.7C50.5,5.1,54.2,3.5,58,3.6z"/>
+</svg>
+</span>
+					<span
+							class="usage--restricted">Usage Conditions Apply</span>
+          				</button>
+			</div>
+      			<div class="card-header" data-popover-element="heading-tab-download">
+				<button  id="heading-tab-download" tabindex="0" type="button" data-parent="#media-tab-edanmdm-nmnhmineralsciences_1001299" data-target="#tab-download" data-placement="bottom" data-offset="0,8px" class="icon btn btn-popover btn-download">
+                      <span class="element-invisible">></span><svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve" aria-labelledby="download" role="img">
+	 <title id="download">download icon</title><path class="fill" d="M22.7,15c0.3-0.3,0.3-0.8,0-1.2l0,0c-0.3-0.3-0.8-0.3-1.1,0l0,0l-5.8,5.8V0.5c0-0.5-0.3-0.8-0.8-0.8c-0.5,0-0.8,0.3-0.8,0.8
+	v19.1l-5.8-5.8c-0.3-0.3-0.8-0.3-1.2,0l0,0c-0.3,0.3-0.3,0.8,0,1.2l0,0l7.2,7.2c0.3,0.3,0.8,0.3,1.2,0C15.5,22.2,22.7,15,22.7,15z
+	 M28.4,20.4c0-0.5,0.3-0.8,0.8-0.8s0.8,0.3,0.8,0.8v7.8c0,0.5-0.3,0.8-0.8,0.8H0.7c-0.5,0-0.8-0.3-0.8-0.8l0,0v-7.8
+	c0-0.5,0.3-0.8,0.8-0.8s0.8,0.3,0.8,0.8v7h26.9V20.4z"/></svg>
+          				</button>
+			</div>
+      			<div class="card-header" data-popover-element="heading-tab-iiif">
+				<button  id="heading-tab-iiif" tabindex="0" type="button" data-parent="#media-tab-edanmdm-nmnhmineralsciences_1001299" data-target="#tab-iiif" data-placement="bottom" data-offset="0,8px" class="icon btn btn-popover btn-iiif">
+                      <span class="element-invisible">></span><svg class="icon fill" version="1.1" id="iiif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 33 30" width="33px" width="30px" style="enable-background:new 0 0 33 30;" xml:space="preserve">
+<path d="M15.8,4.8c0-1.9,1.3-2.9,3.2-2.4c2.3,0.6,4.3,3.3,4,5.7c-0.1,1.3-1.3,2.2-2.5,2C18.1,9.8,15.8,7.2,15.8,4.8z"/>
+<polygon points="16.3,10.6 22.6,12.8 22.6,30 16.3,27.7 "/>
+<path d="M15.2,4.8c0-1.9-1.3-2.9-3.2-2.4C9.7,2.9,7.8,5.6,8.1,8c0.1,1.3,1.3,2.2,2.5,2C13,9.8,15.2,7.2,15.2,4.8z"/>
+<polygon points="14.8,10.6 8.5,12.8 8.5,30 14.8,27.7 "/>
+<path d="M0.2,4.8c0-1.9,1.3-2.9,3.2-2.4c2.3,0.6,4.3,3.3,4,5.7c-0.1,1.3-1.3,2.2-2.5,2C2.5,9.8,0.2,7.2,0.2,4.8z"/>
+<polygon points="0.7,10.6 7,12.8 7,30 0.7,27.7 "/>
+<path d="M30.2,10.6V9.5c0-2.9,0.6-3.9,2.5-3.6V0C28.4,0,24,3.2,24,9.1V30l6.2-2.3V14.8l2.5,0l0-4.2L30.2,10.6z"/>
+</svg>
+          				</button>
+			</div>
+      		</div>
+
+		<div id="tab-usage" class="collapse card-body"
+				 aria-labelledby="heading-tab-usage"
+				 data-parent="#media-tab-edanmdm-nmnhmineralsciences_1001299">
+			<div class="usage media--no-openaccess">
+        <div class="usage--conditions">
+          There are restrictions for re-using this image. For more information, visit the Smithsonian's <a href="https://www.si.edu/termsofuse">Terms of Use</a> page .        </div>
+                      </div>
+
+		</div>
+
+		<div id="tab-download" class="collapse card-body"
+				 aria-labelledby="heading-tab-download"
+				 data-parent="#media-tab-edanmdm-nmnhmineralsciences_1001299">
+					</div>
+
+
+		<div id="tab-iiif" class="collapse card-body"
+				 aria-labelledby="heading-tab-iiif"
+				 data-parent="#media-tab-edanmdm-nmnhmineralsciences_1001299">
+			<div class="header">International media Interoperability Framework</div>
+			<div>IIIF provides researchers rich metadata and media viewing options for comparison of works across cultural heritage collections. Visit the IIIF page to learn more.</div>
+			<div class="iiif-data extra">
+				<a href="" target="_blank" class="manifest">View manifest</a>
+				<a href="" target="_blank" class="miradorViewer">View in Mirador Viewer</a>
+			</div>
+		</div>
+	</div>
+
+				<button class="btn-viewer btn modal-trigger" data-toggle="modal" data-target="#viewerModal" data-source="https://www.si.edu/object/viewer/edanmdm-nmnhmineralsciences_1001299"><span class="element-invisible">Expand to view image</span><svg alt="Enlarge image" title="Enlarge image"  width="32px" height="32px" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path class="fill" d="M10.204 12.052L3.806 5.656l-3.812 3.76V-.012h9.478L5.71 3.75l8.254 8.302h-3.76zM18.03 12.076l8.254-8.302L22.522.012H32V9.44l-3.81-3.76-6.398 6.396zM21.792 19.936l6.398 6.396 3.812-3.76V32h-9.48l3.762-3.762-8.252-8.302h3.76zM13.964 19.912L5.71 28.214l3.762 3.762H-.006v-9.428l3.81 3.76 6.4-6.396z"></path></svg></button>
+	</div>
+
+          <div class="modal fade" id="viewerModal" tabindex="-1" role="dialog"
+           aria-labelledby="viewerModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="button-wrapper">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">&times;
+                </button>
+              </div>
+							<iframe width="100%" height="100%" src="" id="modalIframe"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+              <div class="media-slider">
+        <div class="slick slick--optionset--edan-nav slick--less" id="slick-edanmdm-nmnhmineralsciences_1001299" dir="ltr">
+          <div id="edanmdm-nmnhmineralsciences_1001299-slider" class="slick__slider" data-slick="{&quot;dots&quot;:true,&quot;lazyLoad&quot;:&quot;blazy&quot;,&quot;slidesToShow&quot;:7,&quot;slidesToScroll&quot;:7,&quot;responsive&quot;:[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;arrows&quot;:false,&quot;dots&quot;:true,&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:2}},{&quot;breakpoint&quot;:980,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:3}},{&quot;breakpoint&quot;:1080,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:4}}]}">
+                          <div class="slick__slide slide slide--0"><img src="https://ids.si.edu/ids/deliveryService?irn=15324906&amp;max_w=300&amp;id=https://collections.nmnh.si.edu/media/?irn=15324906" width="" height="" alt="" data-index="0" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?irn=15324906\u0026max_w=800\u0026id=https:\/\/collections.nmnh.si.edu\/media\/?irn=15324906&quot;,&quot;idsId&quot;:&quot;https:\/\/collections.nmnh.si.edu\/media\/?irn=15324906&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:0,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/0&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:0,&quot;content&quot;:&quot;https:\/\/collections.nmnh.si.edu\/media\/?irn=15324906&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--1"><img src="https://ids.si.edu/ids/deliveryService?irn=15324891&amp;max_w=300&amp;id=https://collections.nmnh.si.edu/media/?irn=15324891" width="" height="" alt="" data-index="1" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?irn=15324891\u0026max_w=800\u0026id=https:\/\/collections.nmnh.si.edu\/media\/?irn=15324891&quot;,&quot;idsId&quot;:&quot;https:\/\/collections.nmnh.si.edu\/media\/?irn=15324891&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:1,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/1&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:1,&quot;content&quot;:&quot;https:\/\/collections.nmnh.si.edu\/media\/?irn=15324891&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--2"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3f2fee995e91e43d5a30d938013f1b09c" width="" height="" alt="" data-index="2" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3f2fee995e91e43d5a30d938013f1b09c&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3f2fee995e91e43d5a30d938013f1b09c&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer not affiliated with SI&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:2,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/2&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:2,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3f2fee995e91e43d5a30d938013f1b09c&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--3"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3a584e1466402439b92bd1764a4bbc29d" width="" height="" alt="" data-index="3" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3a584e1466402439b92bd1764a4bbc29d&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3a584e1466402439b92bd1764a4bbc29d&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:3,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/3&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:3,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3a584e1466402439b92bd1764a4bbc29d&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--4"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m334c00ed54985469d80a2af445042d86a" width="" height="" alt="" data-index="4" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m334c00ed54985469d80a2af445042d86a&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m334c00ed54985469d80a2af445042d86a&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:4,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/4&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:4,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m334c00ed54985469d80a2af445042d86a&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--5"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m31350185040384a0f9a09bed1e2874670" width="" height="" alt="" data-index="5" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m31350185040384a0f9a09bed1e2874670&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m31350185040384a0f9a09bed1e2874670&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:5,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/5&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:5,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m31350185040384a0f9a09bed1e2874670&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--6"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3bad24b63d41345b99e032da5d41501c6" width="" height="" alt="" data-index="6" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3bad24b63d41345b99e032da5d41501c6&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3bad24b63d41345b99e032da5d41501c6&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:6,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/6&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:6,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3bad24b63d41345b99e032da5d41501c6&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--7"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m372fe282951d84a329823466e9227504a" width="" height="" alt="" data-index="7" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m372fe282951d84a329823466e9227504a&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m372fe282951d84a329823466e9227504a&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:7,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/7&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:7,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m372fe282951d84a329823466e9227504a&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--8"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3c6f210927c2644c886eb2c8bd176b969" width="" height="" alt="" data-index="8" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3c6f210927c2644c886eb2c8bd176b969&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3c6f210927c2644c886eb2c8bd176b969&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:8,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/8&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:8,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3c6f210927c2644c886eb2c8bd176b969&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--9"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m380b64ef5078d439f959c01d1f5aecd21" width="" height="" alt="" data-index="9" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m380b64ef5078d439f959c01d1f5aecd21&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m380b64ef5078d439f959c01d1f5aecd21&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:9,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/9&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:9,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m380b64ef5078d439f959c01d1f5aecd21&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--10"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m30aad31a2e5ec4751bc2de6d82362c232" width="" height="" alt="" data-index="10" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m30aad31a2e5ec4751bc2de6d82362c232&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m30aad31a2e5ec4751bc2de6d82362c232&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:10,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/10&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:10,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m30aad31a2e5ec4751bc2de6d82362c232&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--11"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m33f37f00d0f6e4854b95c605a305ba69f" width="" height="" alt="" data-index="11" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m33f37f00d0f6e4854b95c605a305ba69f&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m33f37f00d0f6e4854b95c605a305ba69f&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:11,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/11&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:11,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m33f37f00d0f6e4854b95c605a305ba69f&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--12"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3a3467cea9e5b4c69b322a337a62c9853" width="" height="" alt="" data-index="12" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3a3467cea9e5b4c69b322a337a62c9853&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3a3467cea9e5b4c69b322a337a62c9853&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:12,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/12&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:12,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3a3467cea9e5b4c69b322a337a62c9853&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--13"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3e1c00127864945ea8eb327e9bb951f75" width="" height="" alt="" data-index="13" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3e1c00127864945ea8eb327e9bb951f75&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3e1c00127864945ea8eb327e9bb951f75&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:13,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/13&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:13,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3e1c00127864945ea8eb327e9bb951f75&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--14"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m37ac535041fb24c1d947d54a7ce4b90b1" width="" height="" alt="" data-index="14" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m37ac535041fb24c1d947d54a7ce4b90b1&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m37ac535041fb24c1d947d54a7ce4b90b1&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:14,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/14&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:14,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m37ac535041fb24c1d947d54a7ce4b90b1&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--15"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m327a108cec5404c26a2bcab87b9b04c57" width="" height="" alt="" data-index="15" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m327a108cec5404c26a2bcab87b9b04c57&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m327a108cec5404c26a2bcab87b9b04c57&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:15,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/15&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:15,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m327a108cec5404c26a2bcab87b9b04c57&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--16"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3a2507c93ac3d4478a899ed8c54050c0d" width="" height="" alt="" data-index="16" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3a2507c93ac3d4478a899ed8c54050c0d&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3a2507c93ac3d4478a899ed8c54050c0d&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:16,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/16&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:16,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3a2507c93ac3d4478a899ed8c54050c0d&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--17"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3372ab0d256ef44eeb2645d1e0a7149d7" width="" height="" alt="" data-index="17" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3372ab0d256ef44eeb2645d1e0a7149d7&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3372ab0d256ef44eeb2645d1e0a7149d7&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:17,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/17&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:17,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3372ab0d256ef44eeb2645d1e0a7149d7&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--18"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3ececb57679c546c38ee1fcd0a2b9bf3b" width="" height="" alt="" data-index="18" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3ececb57679c546c38ee1fcd0a2b9bf3b&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3ececb57679c546c38ee1fcd0a2b9bf3b&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:18,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/18&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:18,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3ececb57679c546c38ee1fcd0a2b9bf3b&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--19"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3ca3db5c6d89a4f028357997dbe5b3f21" width="" height="" alt="" data-index="19" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3ca3db5c6d89a4f028357997dbe5b3f21&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3ca3db5c6d89a4f028357997dbe5b3f21&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:19,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/19&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:19,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3ca3db5c6d89a4f028357997dbe5b3f21&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--20"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3aee29273dce14f448859cac9c8d87c75" width="" height="" alt="" data-index="20" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3aee29273dce14f448859cac9c8d87c75&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3aee29273dce14f448859cac9c8d87c75&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:20,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/20&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:20,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3aee29273dce14f448859cac9c8d87c75&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--21"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3fb8e5a4e45ff40589c79e09be019aa1b" width="" height="" alt="" data-index="21" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3fb8e5a4e45ff40589c79e09be019aa1b&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3fb8e5a4e45ff40589c79e09be019aa1b&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:21,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/21&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:21,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3fb8e5a4e45ff40589c79e09be019aa1b&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--22"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m30c51d15a37504be1912b9ff319a6bc71" width="" height="" alt="" data-index="22" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m30c51d15a37504be1912b9ff319a6bc71&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m30c51d15a37504be1912b9ff319a6bc71&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:22,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/22&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:22,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m30c51d15a37504be1912b9ff319a6bc71&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--23"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3d0583457eaf94e9cb8d8b5d312e5945b" width="" height="" alt="" data-index="23" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3d0583457eaf94e9cb8d8b5d312e5945b&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3d0583457eaf94e9cb8d8b5d312e5945b&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:23,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/23&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:23,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3d0583457eaf94e9cb8d8b5d312e5945b&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--24"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m36947ab9a1f6347b5b3cafc82abd7de36" width="" height="" alt="" data-index="24" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m36947ab9a1f6347b5b3cafc82abd7de36&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m36947ab9a1f6347b5b3cafc82abd7de36&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Depicted object(s) not owned by the Smithsonian; jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:24,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/24&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:24,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m36947ab9a1f6347b5b3cafc82abd7de36&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--25"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3e4057c7cc28246d88ac2388ec216e84c" width="" height="" alt="" data-index="25" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3e4057c7cc28246d88ac2388ec216e84c&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3e4057c7cc28246d88ac2388ec216e84c&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Depicted object(s) not owned by the Smithsonian; jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:25,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/25&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:25,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3e4057c7cc28246d88ac2388ec216e84c&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--26"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3ea4a2ed6f4df49bca039fb065b50c34c" width="" height="" alt="" data-index="26" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3ea4a2ed6f4df49bca039fb065b50c34c&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3ea4a2ed6f4df49bca039fb065b50c34c&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Depicted object(s) not owned by the Smithsonian; jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:26,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/26&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:26,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3ea4a2ed6f4df49bca039fb065b50c34c&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--27"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m316bfccf0ff254640a7a614a9a94a710c" width="" height="" alt="" data-index="27" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m316bfccf0ff254640a7a614a9a94a710c&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m316bfccf0ff254640a7a614a9a94a710c&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Depicted object(s) not owned by the Smithsonian; jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:27,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/27&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:27,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m316bfccf0ff254640a7a614a9a94a710c&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--28"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m363be96c5dead4a018f212b27e0a0b61d" width="" height="" alt="" data-index="28" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m363be96c5dead4a018f212b27e0a0b61d&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m363be96c5dead4a018f212b27e0a0b61d&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Depicted object(s) not owned by the Smithsonian; jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:28,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/28&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:28,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m363be96c5dead4a018f212b27e0a0b61d&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--29"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3f4ac5851c036403a8460ef20ba5cc257" width="" height="" alt="" data-index="29" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3f4ac5851c036403a8460ef20ba5cc257&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3f4ac5851c036403a8460ef20ba5cc257&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:29,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/29&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:29,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3f4ac5851c036403a8460ef20ba5cc257&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--30"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3c96b1ae2d5a34ef2be201c60496e8f57" width="" height="" alt="" data-index="30" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3c96b1ae2d5a34ef2be201c60496e8f57&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3c96b1ae2d5a34ef2be201c60496e8f57&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:30,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/30&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:30,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3c96b1ae2d5a34ef2be201c60496e8f57&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--31"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3cee9458759fd4c96bb118d9c3d9822c5" width="" height="" alt="" data-index="31" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3cee9458759fd4c96bb118d9c3d9822c5&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3cee9458759fd4c96bb118d9c3d9822c5&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:31,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/31&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:31,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3cee9458759fd4c96bb118d9c3d9822c5&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--32"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m342903b81fe624e64bbb12ab97e71be42" width="" height="" alt="" data-index="32" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m342903b81fe624e64bbb12ab97e71be42&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m342903b81fe624e64bbb12ab97e71be42&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer not affiliated with SI&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:32,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/32&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:32,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m342903b81fe624e64bbb12ab97e71be42&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--33"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3ca52537b32ed48f1b1485b5c9c956bd2" width="" height="" alt="" data-index="33" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3ca52537b32ed48f1b1485b5c9c956bd2&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3ca52537b32ed48f1b1485b5c9c956bd2&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:33,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/33&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:33,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3ca52537b32ed48f1b1485b5c9c956bd2&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--34"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m33ec974f14ed94e49a1f49570bd5ea26b" width="" height="" alt="" data-index="34" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m33ec974f14ed94e49a1f49570bd5ea26b&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m33ec974f14ed94e49a1f49570bd5ea26b&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:34,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/34&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:34,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m33ec974f14ed94e49a1f49570bd5ea26b&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--35"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m32154b6e94d794ab9b384e6562a12ba5f" width="" height="" alt="" data-index="35" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m32154b6e94d794ab9b384e6562a12ba5f&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m32154b6e94d794ab9b384e6562a12ba5f&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:35,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/35&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:35,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m32154b6e94d794ab9b384e6562a12ba5f&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--36"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3cc9830c8284141738bf39890521659dd" width="" height="" alt="" data-index="36" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3cc9830c8284141738bf39890521659dd&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3cc9830c8284141738bf39890521659dd&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:36,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/36&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:36,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3cc9830c8284141738bf39890521659dd&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--37"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m34ad4d0d2a8304e5d98caa749bce931b4" width="" height="" alt="" data-index="37" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m34ad4d0d2a8304e5d98caa749bce931b4&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m34ad4d0d2a8304e5d98caa749bce931b4&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:37,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/37&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:37,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m34ad4d0d2a8304e5d98caa749bce931b4&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--38"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m38fa4e2540a3c43cc9f91b9e83c5676cf" width="" height="" alt="" data-index="38" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m38fa4e2540a3c43cc9f91b9e83c5676cf&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m38fa4e2540a3c43cc9f91b9e83c5676cf&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer not affiliated with SI&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:38,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/38&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:38,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m38fa4e2540a3c43cc9f91b9e83c5676cf&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--39"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3a3c58ec0e93045f99e602ad816cec04d" width="" height="" alt="" data-index="39" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3a3c58ec0e93045f99e602ad816cec04d&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3a3c58ec0e93045f99e602ad816cec04d&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:39,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/39&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:39,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3a3c58ec0e93045f99e602ad816cec04d&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--40"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3f55cc71e93034dac86b082daa205710f" width="" height="" alt="" data-index="40" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3f55cc71e93034dac86b082daa205710f&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3f55cc71e93034dac86b082daa205710f&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:40,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/40&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:40,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3f55cc71e93034dac86b082daa205710f&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--41"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m38bf9032430e7444cb4aea909b8d941b7" width="" height="" alt="" data-index="41" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m38bf9032430e7444cb4aea909b8d941b7&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m38bf9032430e7444cb4aea909b8d941b7&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:41,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/41&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:41,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m38bf9032430e7444cb4aea909b8d941b7&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--42"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m30da09700ea23486ca2f6286ce0ff4d69" width="" height="" alt="" data-index="42" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m30da09700ea23486ca2f6286ce0ff4d69&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m30da09700ea23486ca2f6286ce0ff4d69&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:42,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/42&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:42,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m30da09700ea23486ca2f6286ce0ff4d69&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--43"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3f40838fa180d4e6897adbd7f86826000" width="" height="" alt="" data-index="43" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3f40838fa180d4e6897adbd7f86826000&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3f40838fa180d4e6897adbd7f86826000&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:43,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/43&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:43,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3f40838fa180d4e6897adbd7f86826000&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--44"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3d8e3bd7983884103b1218d8e716c4251" width="" height="" alt="" data-index="44" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3d8e3bd7983884103b1218d8e716c4251&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3d8e3bd7983884103b1218d8e716c4251&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:44,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/44&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:44,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3d8e3bd7983884103b1218d8e716c4251&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--45"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m394b9798122794d1491afb0553960dcc6" width="" height="" alt="" data-index="45" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m394b9798122794d1491afb0553960dcc6&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m394b9798122794d1491afb0553960dcc6&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:45,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/45&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:45,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m394b9798122794d1491afb0553960dcc6&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--46"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m377a9a531a8774d73ad92e16f17cdd6a0" width="" height="" alt="" data-index="46" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m377a9a531a8774d73ad92e16f17cdd6a0&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m377a9a531a8774d73ad92e16f17cdd6a0&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:46,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/46&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:46,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m377a9a531a8774d73ad92e16f17cdd6a0&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--47"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3fc38fa4bae714eac981327e43dacd269" width="" height="" alt="" data-index="47" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3fc38fa4bae714eac981327e43dacd269&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3fc38fa4bae714eac981327e43dacd269&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer unknown&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:47,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/47&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:47,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3fc38fa4bae714eac981327e43dacd269&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--48"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m326d03d554a684976b9e66b0096aecd45" width="" height="" alt="" data-index="48" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m326d03d554a684976b9e66b0096aecd45&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m326d03d554a684976b9e66b0096aecd45&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer unknown&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:48,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/48&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:48,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m326d03d554a684976b9e66b0096aecd45&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--49"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m36fec6ac0cf7d48fc938b2848c49df15a" width="" height="" alt="" data-index="49" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m36fec6ac0cf7d48fc938b2848c49df15a&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m36fec6ac0cf7d48fc938b2848c49df15a&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer not affiliated with SI&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:49,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/49&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:49,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m36fec6ac0cf7d48fc938b2848c49df15a&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--50"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m39684884f37e44f1ca2065840436c6e58" width="" height="" alt="" data-index="50" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m39684884f37e44f1ca2065840436c6e58&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m39684884f37e44f1ca2065840436c6e58&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer not affiliated with SI&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:50,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/50&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:50,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m39684884f37e44f1ca2065840436c6e58&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--51"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3c218bf05bf7d40ab9ad7fbb1202f31c4" width="" height="" alt="" data-index="51" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3c218bf05bf7d40ab9ad7fbb1202f31c4&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3c218bf05bf7d40ab9ad7fbb1202f31c4&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:51,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/51&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:51,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3c218bf05bf7d40ab9ad7fbb1202f31c4&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--52"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m38326187827424656be610859d15b72d7" width="" height="" alt="" data-index="52" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m38326187827424656be610859d15b72d7&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m38326187827424656be610859d15b72d7&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer unknown&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:52,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/52&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:52,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m38326187827424656be610859d15b72d7&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--53"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3ca22128db3de43bcb63fcf4fafe98eb2" width="" height="" alt="" data-index="53" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3ca22128db3de43bcb63fcf4fafe98eb2&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3ca22128db3de43bcb63fcf4fafe98eb2&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:53,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/53&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:53,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3ca22128db3de43bcb63fcf4fafe98eb2&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--54"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3ef0af4af690743fd9f96bed94497b9c3" width="" height="" alt="" data-index="54" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3ef0af4af690743fd9f96bed94497b9c3&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3ef0af4af690743fd9f96bed94497b9c3&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:54,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/54&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:54,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3ef0af4af690743fd9f96bed94497b9c3&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--55"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m382efde849a924ae2aea64d141dfdd9c9" width="" height="" alt="" data-index="55" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m382efde849a924ae2aea64d141dfdd9c9&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m382efde849a924ae2aea64d141dfdd9c9&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer not affiliated with SI&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:55,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/55&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:55,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m382efde849a924ae2aea64d141dfdd9c9&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--56"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m340a1075042a34e90afd97acb52f12522" width="" height="" alt="" data-index="56" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m340a1075042a34e90afd97acb52f12522&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m340a1075042a34e90afd97acb52f12522&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer not affiliated with SI&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:56,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/56&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:56,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m340a1075042a34e90afd97acb52f12522&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--57"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3e89638886d524bdf9672a174f27feada" width="" height="" alt="" data-index="57" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3e89638886d524bdf9672a174f27feada&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3e89638886d524bdf9672a174f27feada&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer unknown&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:57,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/57&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:57,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3e89638886d524bdf9672a174f27feada&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--58"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m308ceac270aa74993aa12f0676723e4fc" width="" height="" alt="" data-index="58" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m308ceac270aa74993aa12f0676723e4fc&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m308ceac270aa74993aa12f0676723e4fc&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright; photographer not affiliated with SI&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:58,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/58&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:58,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m308ceac270aa74993aa12f0676723e4fc&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--59"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m39ff303cdd50e4a6c86017f0a1e85a95c" width="" height="" alt="" data-index="59" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m39ff303cdd50e4a6c86017f0a1e85a95c&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m39ff303cdd50e4a6c86017f0a1e85a95c&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:59,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/59&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:59,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m39ff303cdd50e4a6c86017f0a1e85a95c&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--60"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3aa9ff6d61e5e4117a2177c0c4476153d" width="" height="" alt="" data-index="60" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3aa9ff6d61e5e4117a2177c0c4476153d&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3aa9ff6d61e5e4117a2177c0c4476153d&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:60,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/60&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:60,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3aa9ff6d61e5e4117a2177c0c4476153d&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--61"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3693bcc8922734a2d9e995ad7211ba971" width="" height="" alt="" data-index="61" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3693bcc8922734a2d9e995ad7211ba971&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3693bcc8922734a2d9e995ad7211ba971&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:61,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/61&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:61,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3693bcc8922734a2d9e995ad7211ba971&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                          <div class="slick__slide slide slide--62"><img src="https://ids.si.edu/ids/deliveryService?max_w=300&amp;id=ark:/65665/m3791162ea23754f9eb4a8a85fde15236e" width="" height="" alt="" data-index="62" data-edan="{&quot;title&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService?max_w=800\u0026id=ark:\/65665\/m3791162ea23754f9eb4a8a85fde15236e&quot;,&quot;idsId&quot;:&quot;ark:\/65665\/m3791162ea23754f9eb4a8a85fde15236e&quot;,&quot;usage&quot;:&quot;media--no-openaccess&quot;,&quot;text&quot;:&quot;Jewelry and other visual works assumed to be in copyright&quot;,&quot;type&quot;:&quot;images&quot;,&quot;index&quot;:62,&quot;expand&quot;:&quot;https:\/\/www.si.edu\/object\/viewer\/edanmdm-nmnhmineralsciences_1001299\/62&quot;,&quot;caption&quot;:&quot;&quot;,&quot;has_ids&quot;:true,&quot;delta&quot;:62,&quot;content&quot;:&quot;https:\/\/ids.si.edu\/ids\/deliveryService\/id\/ark:\/65665\/m3791162ea23754f9eb4a8a85fde15236e&quot;,&quot;alt_text&quot;:&quot;&quot;}" /></div>
+                      </div>
+          <nav class="slick__arrow" role="navigation">
+            <button type="button" data-role="none" class="slick-prev"
+                    aria-label="Previous" tabindex="0" role="button"><svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+									<path class="svg-bg" d="M35,34c0,0.6-0.5,1-1.1,1H1.1C0.5,35,0,34.5,0,34V1c0-0.6,0.5-1,1.1-1H34c0.5,0,1,0.5,1,1V34z"/>
+									<path class="fill" d="M22.6,16.3c0.7,0.7,0.7,1.8,0,2.5c0,0-7.8,7.7-7.8,7.7c-0.7,0.7-1.8,0.7-2.5,0c-0.7-0.7-0.7-1.8,0-2.5l6.5-6.5
+										l-6.4-6.4c-0.7-0.7-0.7-1.8,0-2.5c0.7-0.7,1.8-0.7,2.5,0L22.6,16.3"/>
+								</svg><span
+                class="element-invisible">Previous</span></button>
+            <button type="button" data-role="none" class="slick-next"
+                    aria-label="Next" tabindex="0" role="button">
+              <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+									<path class="svg-bg" d="M35,34c0,0.6-0.5,1-1.1,1H1.1C0.5,35,0,34.5,0,34V1c0-0.6,0.5-1,1.1-1H34c0.5,0,1,0.5,1,1V34z"/>
+									<path class="fill" d="M22.6,16.3c0.7,0.7,0.7,1.8,0,2.5c0,0-7.8,7.7-7.8,7.7c-0.7,0.7-1.8,0.7-2.5,0c-0.7-0.7-0.7-1.8,0-2.5l6.5-6.5
+										l-6.4-6.4c-0.7-0.7-0.7-1.8,0-2.5c0.7-0.7,1.8-0.7,2.5,0L22.6,16.3"/>
+								</svg><span
+                class="element-invisible">Next</span></button>
+          </nav>
+        </div>
+
+      </div>
+      </div>
+
+            
+          </div>
+
+        
+      </section>
+
+    </div>
+  </div>
+
+
+              </div>
+
+                </div>
+
+    <footer class="l-footer">
+      <div class="l-container l-container l-region l-region--footer">
+    <div id="block-panels-mini-footer" class="block block--panels-mini block--panels-mini-footer block--panels-mini-footer">
+          <div class="panel-2col-stacked clearfix panel-display" id="mini-panel-footer">
+      <div class="panel-col-top panel-panel">
+      <div class="l-container"><div class="panel-pane pane-block pane-block-1" id="panel-pane-355"  id="anel-pane-355" class="panel-pane pane-block pane-block-1">
+  
+    
+      <h2 class="pane-title element-invisible element-invisible" id="footer-logo">
+      Footer logo      </h2>
+
+    
+  
+    <div aria-labelledby="footer-logo"><div aria-labelledby="footer-logo"><p class="logo-wrapper" style="max-height:100px;"><a class="si-logo" href="/"><span class="sr-only">Link to homepage</span></a></p>
+</div></div>
+  
+  </div>
+<div class="panel-pane pane-block pane-menu-menu-footer robots-noindex" id="panel-pane-356"  id="anel-pane-356" class="panel-pane pane-block pane-menu-menu-footer robots-noindex">
+  
+    
+      <h3 class="pane-title element-invisible element-invisible" id="footer-navigation">
+      Footer navigation      </h3>
+
+    
+  
+    <nav aria-labelledby="footer-navigation"><ul class="menu"><li class="first leaf"><a href="/contacts"><span class="menu-title">Contact Us</span></a></li>
+<li class="leaf"><a href="/ohr/jobs"><span class="menu-title">Job Opportunities</span></a></li>
+<li class="leaf"><a href="/getinvolved"><span class="menu-title">Get Involved</span></a></li>
+<li class="leaf"><a href="https://oig.si.edu"><span class="menu-title">Inspector General</span></a></li>
+<li class="leaf"><a href="/ogc/records-requests"><span class="menu-title">Records Requests</span></a></li>
+<li class="leaf"><a href="/faqs/access"><span class="menu-title">Accessibility</span></a></li>
+<li class="leaf"><a href="/oeesd"><span class="menu-title">EEO & Supplier Diversity</span></a></li>
+<li class="leaf"><a href="/shop"><span class="menu-title">Shop Online</span></a></li>
+<li class="leaf"><a href="/specialevents"><span class="menu-title">Host Your Event</span></a></li>
+<li class="leaf"><a href="/newsdesk"><span class="menu-title">Press Room</span></a></li>
+<li class="leaf"><a href="/privacy"><span class="menu-title">Privacy</span></a></li>
+<li class="last leaf"><a href="/termsofuse"><span class="menu-title">Terms of Use</span></a></li>
+</ul></nav>
+  
+  </div>
+</div>
+
+    </div>
+          <div class="panel-col-bottom panel-panel">
+      <div class="panel-pane pane-block pane-menu-menu-social-media robots-noindex" id="panel-pane-354"  id="anel-pane-354" class="panel-pane pane-block pane-menu-menu-social-media robots-noindex">
+  
+    
+      <h3 class="pane-title element-invisible element-invisible" id="social-media-links">
+      Social media links      </h3>
+
+    
+  
+    <nav aria-labelledby="social-media-links"><ul class="menu"><li class="first leaf"><a href="https://www.facebook.com/Smithsonian" class="fa fa-facebook-f fa-brands" target="_blank"><span class="menu-title">Facebook</span></a></li>
+<li class="leaf"><a href="https://instagram.com/smithsonian" class="fa-brands fa-instagram"><span class="menu-title">Instagram</span></a></li>
+<li class="leaf"><a href="https://www.youtube.com/c/smithsonian" class="fa-brands fa-youtube"><span class="menu-title">YouTube</span></a></li>
+<li class="last leaf"><a href="https://www.linkedin.com/company/smithsonian-institution" class="fa-brands fa-linkedin" target="_blank"><span class="menu-title">LinkedIn</span></a></li>
+</ul></nav>
+  
+  </div>
+<div class="panel-pane pane-block pane-webform-client-block-682426" id="panel-pane-1552"  id="anel-pane-1552" class="panel-pane pane-block pane-webform-client-block-682426">
+  
+      
+  
+    <div id="node-682426" class="node node--webform node--promoted node--full node--webform--full node--full node--webform--full clearfix" about="/webform/get-latest-news-smithsonian" typeof="sioc:Item foaf:Document" role="article" class="node node--webform node--promoted node--full node--webform--full node--full node--webform--full">
+
+  
+        <h2 class="node__title node__title"><a href="/webform/get-latest-news-smithsonian">Get the latest news from the Smithsonian</a></h2>
+    <span property="dc:title" content="Get the latest news from the Smithsonian" class="rdf-meta element-hidden"></span>
+  
+  <div class="content" class="node__content node__content">
+    
+
+       <p><a class="btn green colorbox-inline newsletter-signup" href="?width=700&amp;height=425&amp;inline=true#webform-client-form-682426">Sign up for Smithsonian e-news</a></p>
+  
+<div class="group-webform-wrapper field-group-html-element" id="newsletter-signup-form"><form class="webform-client-form webform-client-form-682426 webform-client-form-682426" action="/object/hope-diamond%3Anmnhmineralsciences_1001299" method="post" id="webform-client-form-682426" accept-charset="UTF-8"><div><div  class="form-item webform-component webform-component-markup webform-component--title">
+ <h1 class="title">Get the latest news from the Smithsonian</h1>
+</div>
+<div  class="form-item webform-component webform-component-email webform-component--si-email-signup-form webform-container-inline">
+  <label for="edit-submitted-si-email-signup-form">Sign up for Smithsonian e-news: <span class="form-required" title="This field is required.">*</span></label>
+ <input required="required" class="email form-text form-email required" type="email" id="edit-submitted-si-email-signup-form" name="submitted[si_email_signup_form]" size="60" />
+ <div class="description">Email powered by BlackBaud (Privacy Policy, Terms of Use)</div>
+</div>
+<div  class="form-item webform-component webform-component-markup webform-component--msg-container">
+ 
+</div>
+<input type="hidden" name="details[sid]" />
+<input type="hidden" name="details[page_num]" value="1" />
+<input type="hidden" name="details[page_count]" value="1" />
+<input type="hidden" name="details[finished]" value="0" />
+<input type="hidden" name="form_build_id" value="form-MgGgttGFY7dVVtGhteR17HQBIyjkMtd6nh1Uo3KlmA4" />
+<input type="hidden" name="form_id" value="webform_client_form_682426" />
+<fieldset class="captcha form-wrapper"><legend><span class="fieldset-legend">CAPTCHA</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</div><input type="hidden" name="captcha_sid" value="176059561" />
+<input type="hidden" name="captcha_token" value="66d2dfe635b0c8a8c67e58c6311dc3c5" />
+<input type="hidden" name="captcha_response" value="Google no captcha" />
+<div class="g-recaptcha" data-sitekey="6LfgLRkUAAAAAP_vdq2zcO4mnPVvqqxDXyINJVEJ" data-theme="light" data-type="image"></div><noscript>
+  <div style="width: 302px; height: 352px;">
+    <div style="width: 302px; height: 352px; position: relative;">
+      <div style="width: 302px; height: 352px; position: absolute;">
+        <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LfgLRkUAAAAAP_vdq2zcO4mnPVvqqxDXyINJVEJ&amp;hl=en" frameborder="0" scrolling="no" style="width: 302px; height:352px; border-style: none;"></iframe>
+      </div>
+      <div style="width: 250px; height: 80px; position: absolute; border-style: none; bottom: 21px; left: 25px; margin: 0px; padding: 0px; right: 25px;">
+        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 80px; border: 1px solid #c1c1c1; margin: 0px; padding: 0px; resize: none;" value=""></textarea>
+      </div>
+    </div>
+  </div>
+</noscript>
+<input type="hidden" name="captcha_cacheable" value="1" />
+</div></fieldset>
+<div class="form-actions"><input class="webform-submit button-primary form-submit " type="submit" name="op" value="&gt;&gt;" /></div></div></form></div>  </div>
+
+  
+  
+</div>
+
+  
+  </div>
+    </div>
+  </div>
+</div>
+  </div>
+  </footer>
+  <div class="region--postscript">
+    <div>
+      <a href="#main-content" class="page-nav" id="back-to-top"><span class="icon"></span><span class="text">Back to Top</span> </a>
+    </div>
+  </div>
+
+</div>
+
+  
+<!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2018 Webtrends Inc.  All rights reserved. -->
+    <script>
+        window.webtrendsAsyncInit=function(){
+            var dcs=new Webtrends.dcs().init({
+                dcsid:"dcsuft0skadzpxvkk977nydg5_3r1t",
+                domain:"logs1.smithsonian.museum",
+                timezone:-5,
+                i18n:true,
+                fpcdom:".si.edu",
+                plugins:{
+                }
+            }).track();
+        };
+        (function(){
+            var s=document.createElement("script"); s.async=true; s.src="https://www.si.edu/sites/all/modules/si_webtrends/js/webtrends.min.js";
+            var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
+        }());
+    </script>
+    <noscript><img alt="dcsimg" id="dcsimg" width="1" height="1" src="//logs1.smithsonian.museum/dcsuft0skadzpxvkk977nydg5_3r1t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.4.23&amp;dcssip=si.edu"/></noscript>
+    <!-- END OF SmartSource Data Collector TAG v10.4.23 -->
+<script src="https://www.si.edu/sites/all/modules/edan/modules/edan_record/js/edanGlobal.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/modules/edan/modules/edan_record/js/edanRecord.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/js/colorbox-gs.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/js/si_views.js?skjw7q"></script>
+<script src="https://www.si.edu/sites/all/themes/si_baseline/js/edan_record.js?skjw7q"></script>
+
+</body>
+
+  </html>
