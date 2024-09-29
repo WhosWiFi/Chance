@@ -315,6 +315,7 @@
     let spinCount = 0;
     let achievment_spin1_check = false;
     let achievment_spin2_check = false;
+    let achievment_tier1_check = false;
 
     function spinRarity() {
         spinCount += 1;
@@ -345,18 +346,19 @@
     function achievmentCheck() {
       for (let i = tiers.length - 1; i >= 0; i--) {
             const tierElement = document.getElementById(tiers[i].elementId);
-            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'common') {
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'common' && !(achievment_tier1_check)) {
                 alert("Common has been achieved!");
+                achievment_tier1_check = true;
                 break;
             }
       }
 
-      if (spinCount > 4 && !(achievment_1_check)) {
+      if (spinCount > 4 && !(achievment_spin1_check)) {
         alert("🎉 Achievement Unlocked: Spin Master! (5 Spins)");
         achievment_spin1_check = true;
       }
 
-      if (spinCount > 9) {
+      if (spinCount > 9 && !(achievment_spin2_check)) {
         alert("🚀 You're on fire! (10 Spins)");
         achievment_spin2_check = true;
       }
