@@ -56,6 +56,30 @@ app.get('/ruby.jpg', function (req, res) {
     });
 });
 
+app.get('/sapphire.jpg', function (req, res) {
+    fs.readFile('images/sapphire.jpg', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      return res.end();
+    });
+});
+
+app.get('/emerald.jpg', function (req, res) {
+    fs.readFile('images/emerald.jpg', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      return res.end();
+    });
+});
+
+app.get('/diamond.jpg', function (req, res) {
+    fs.readFile('images/diamond.jpg', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      return res.end();
+    });
+});
+
 app.get('/pink_panther.jpg', function (req, res) {
     fs.readFile('images/pink_panther.jpg', function (err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpeg'});
