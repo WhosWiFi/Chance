@@ -313,14 +313,11 @@
 
     let currentRotation = 0;
     let spinCount = 0;
-    let achievment_1_check = false;
+    let achievment_spin1_check = false;
+    let achievment_spin2_check = false;
 
     function spinRarity() {
-        spinCount++;
-        if (spinCount > 2 && !(achievment_1_check)) {
-          alert("Achievment 1 Complete!");
-          achievment_1_check = true;
-        }
+        spinCount += 1;
         const rarityBox = document.getElementById('rarityBox');
         const rarityText = document.getElementById('rarityText');
         const spinButton = document.getElementById('spinButton');
@@ -339,9 +336,30 @@
             updateRarityAppearance(rarityBox, result.className, result.bgColor, result.textColor);
             markTierAsCollected(result.elementId);
             updateUsernameColorBasedOnRarestTier();
+            achievmentCheck();
             // Enable the button after the animation completes
             spinButton.disabled = false;
         }, 2000);
+    }
+    
+    function achievmentCheck() {
+      for (let i = tiers.length - 1; i >= 0; i--) {
+            const tierElement = document.getElementById(tiers[i].elementId);
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'common') {
+                alert("Common has been achieved!");
+                break;
+            }
+      }
+
+      if (spinCount > 4 && !(achievment_1_check)) {
+        alert("🎉 Achievement Unlocked: Spin Master! (5 Spins)");
+        achievment_spin1_check = true;
+      }
+
+      if (spinCount > 9) {
+        alert("🚀 You're on fire! (10 Spins)");
+        achievment_spin2_check = true;
+      }
     }
 
     function getRandomRarity(tiers) {
