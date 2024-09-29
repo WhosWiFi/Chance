@@ -321,7 +321,7 @@
             rarityText.textContent = result.rarityText;  // Set the custom rarity text
             updateRarityAppearance(rarityBox, result.className, result.bgColor, result.textColor);
             markTierAsCollected(result.elementId);
-            if (result.elementId == 'gold'){
+            if (result.elementId == 'rare'){
                 document.getElementById('username').style.color = 'gold';
             }
             // Enable the button after the animation completes
