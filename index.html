@@ -321,6 +321,13 @@
             rarityText.textContent = result.rarityText;  // Set the custom rarity text
             updateRarityAppearance(rarityBox, result.className, result.bgColor, result.textColor);
             markTierAsCollected(result.elementId);
+            console.log(result);
+            if (result.elementId == 'common'){
+                document.getElementById('username').style.color = 'brown';
+            }
+            if (result.elementId == 'uncommon'){
+                document.getElementById('username').style.color = 'silver';
+            }
             if (result.elementId == 'rare'){
                 document.getElementById('username').style.color = 'gold';
             }
