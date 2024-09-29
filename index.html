@@ -18,6 +18,14 @@
       background-image: url('/background.jpg');
     }
 
+    .username-display {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 20px;
+      color: rgb(255, 255, 255); /* Username in black */
+    }
+
     .container {
       text-align: center;
     }
@@ -54,8 +62,6 @@
 
     .common {
       background-image: url('/copper.jpg');
-      background-color: rgba(255, 255, 255, 0.8);
-      color: rgba(255, 255, 255, 0.8);
     }
 
     .uncommon {
@@ -187,6 +193,10 @@
   </style>
 </head>
 <body>
+  <div id="usernameDisplay" class="username-display">
+    Username: <span id="username"></span>
+  </div>
+
   <div class="container">
     <div class="rarity-box" id="rarityBox">
       <div class="rarity-text" id="rarityText">???</div>
@@ -210,6 +220,12 @@
   </div>
 
   <script>
+        // Extract the username from the query parameter
+    const params = new URLSearchParams(window.location.search);
+    const username = params.get('username');
+
+    // Display the username in the top-right corner
+    document.getElementById('username').textContent = username || 'Guest';
     document.getElementById('spinButton').addEventListener('click', spinRarity);
 
     const tiers = [
@@ -305,7 +321,9 @@
             rarityText.textContent = result.rarityText;  // Set the custom rarity text
             updateRarityAppearance(rarityBox, result.className, result.bgColor, result.textColor);
             markTierAsCollected(result.elementId);
-
+            if (result.elementId == 'secret'){
+                document.getElementById('username').textColor = 'gold';
+            }
             // Enable the button after the animation completes
             spinButton.disabled = false;
         }, 2000);
