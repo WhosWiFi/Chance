@@ -234,70 +234,80 @@
         chance: 0.40, 
         elementId: 'common', 
         className: 'common', 
-        rarityText: 'Common - Copper' 
+        rarityText: 'Common - Copper',
+        color: 'brown'
       },
       { 
         tier: 'Uncommon', 
         chance: 0.25, 
         elementId: 'uncommon', 
         className: 'uncommon', 
-        rarityText: 'Uncommon - Silver' 
+        rarityText: 'Uncommon - Silver',
+        color: 'silver'
       },
       { 
         tier: 'Rare', 
         chance: 0.15, 
         elementId: 'rare', 
         className: 'rare', 
-        rarityText: 'Rare - Gold' 
+        rarityText: 'Rare - Gold',
+        color: 'gold'
       },
       { 
         tier: 'Super Rare', 
         chance: 0.10, 
         elementId: 'superRare', 
         className: 'superRare', 
-        rarityText: 'Super Rare - Ruby' 
+        rarityText: 'Super Rare - Ruby',
+        color: 'red'
       },
       { 
         tier: 'Ultra Rare', 
         chance: 0.05, 
         elementId: 'ultraRare', 
         className: 'ultraRare', 
-        rarityText: 'Ultra Rare - Sapphire' 
+        rarityText: 'Ultra Rare - Sapphire',
+        color: 'blue'
       },
       { 
         tier: 'Epic', 
         chance: 0.025, 
         elementId: 'epic', 
         className: 'epic', 
-        rarityText: 'Epic - Emerald' 
+        rarityText: 'Epic - Emerald',
+        color: 'green'
       },
       { 
         tier: 'Legendary', 
         chance: 0.01, 
         elementId: 'legendary', 
         className: 'legendary', 
-        rarityText: 'Legendary - Diamond' 
+        rarityText: 'Legendary - Diamond',
+        color: 'white'
       },
       { 
         tier: 'Mythic', 
         chance: 0.005, 
         elementId: 'mythic', 
         className: 'mythic',
-        rarityText: 'Mythic - Pink Panther' 
+        rarityText: 'Mythic - Pink Panther',
+        color: 'pink'
       },
       { 
         tier: 'Divine', 
         chance: 0.003, 
         elementId: 'divine', 
         className: 'divine',
-        rarityText: 'Divine - Hope Diamond' 
+        rarityText: 'Divine - Hope Diamond',
+        color: 'purple'
       },
       { 
         tier: 'Secret', 
         chance: 0.002, 
         elementId: 'secret', 
         className: 'secret',
-        rarityText: 'Secret - 1/1' 
+        rarityText: 'Secret - 1/1',
+        color: 'black'
       }
     ];
 
@@ -321,16 +331,7 @@
             rarityText.textContent = result.rarityText;  // Set the custom rarity text
             updateRarityAppearance(rarityBox, result.className, result.bgColor, result.textColor);
             markTierAsCollected(result.elementId);
-            console.log(result);
-            if (result.elementId == 'common'){
-                document.getElementById('username').style.color = 'brown';
-            }
-            if (result.elementId == 'uncommon'){
-                document.getElementById('username').style.color = 'silver';
-            }
-            if (result.elementId == 'rare'){
-                document.getElementById('username').style.color = 'gold';
-            }
+            updateUsernameColorBasedOnRarestTier();
             // Enable the button after the animation completes
             spinButton.disabled = false;
         }, 2000);
@@ -346,14 +347,11 @@
                 return tiers[i];
             }
         }
-        return tiers[0];
+        return tiers[0]; // Fallback to 'Common' if something goes wrong
     }
 
     function updateRarityAppearance(rarityBox, className) {
-        // Remove all previous tier classes
         rarityBox.className = 'rarity-box';
-
-        // Add the new tier class
         rarityBox.classList.add(className);
     }
 
@@ -362,6 +360,18 @@
         if (!tierElement.classList.contains('checked')) {
             tierElement.classList.add('checked');
             tierElement.innerHTML += ' <span class="checkmark">✔</span>';
+        }
+    }
+
+    // Check for the highest unlocked tier from Secret to Common
+    function updateUsernameColorBasedOnRarestTier() {
+        for (let i = tiers.length - 1; i >= 0; i--) {
+            const tierElement = document.getElementById(tiers[i].elementId);
+            if (tierElement.classList.contains('checked')) {
+                // Update the username color based on the rarest collected tier
+                document.getElementById('username').style.color = tiers[i].color;
+                break; // Exit after finding the rarest unlocked tier
+            }
         }
     }
 
