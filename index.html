@@ -316,6 +316,15 @@
     let achievment_spin1_check = false;
     let achievment_spin2_check = false;
     let achievment_tier1_check = false;
+    let achievment_tier2_check = false;
+    let achievment_tier3_check = false;
+    let achievment_tier4_check = false;
+    let achievment_tier5_check = false;
+    let achievment_tier6_check = false;
+    let achievment_tier7_check = false;
+    let achievment_tier8_check = false;
+    let achievment_tier9_check = false;
+    let achievment_tier10_check = false;
 
     function spinRarity() {
         spinCount += 1;
@@ -364,12 +373,245 @@
               // Append iframe to body
               document.body.appendChild(iframe);
 
-              // Remove iframe after 10 seconds
               setTimeout(() => {
                   iframe.remove();
               }, 5000);
 
                 achievment_tier1_check = true;
+                break;
+            }
+
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'uncommon' && !(achievment_tier2_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Silver</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
+
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_tier2_check = true;
+                break;
+            }
+
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'rare' && !(achievment_tier3_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Gold</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
+
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_tier3_check = true;
+                break;
+            }
+
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'superRare' && !(achievment_tier4_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Ruby</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
+
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_tier4_check = true;
+                break;
+            }
+
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'ultraRare' && !(achievment_tier5_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Sapphire</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
+
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_tier5_check = true;
+                break;
+            }
+
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'epic' && !(achievment_tier6_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Emerald</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
+
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_tier6_check = true;
+                break;
+            }
+
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'legendary' && !(achievment_tier7_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Diamond</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
+
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_tier7_check = true;
+                break;
+            }
+
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'mythic' && !(achievment_tier8_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Pink Panther</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
+
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_tier8_check = true;
+                break;
+            }
+
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'divine' && !(achievment_tier9_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Hope Diamond</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
+
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_tier9_check = true;
+                break;
+            }
+
+            if (tierElement.classList.contains('checked') && tiers[i].elementId == 'secret' && !(achievment_tier10_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Egg?</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
+
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_tier10_check = true;
                 break;
             }
       }
