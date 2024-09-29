@@ -16,6 +16,14 @@ app.get('/', function (req, res) {
       });
 });
 
+app.get('/background.jpg', function (req, res) {
+    fs.readFile('images/background.jpg', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      return res.end();
+    });
+});
+
 app.get('/default.jpg', function (req, res) {
     fs.readFile('images/default.jpg', function (err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpeg'});
