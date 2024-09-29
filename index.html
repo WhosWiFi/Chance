@@ -312,8 +312,15 @@
     ];
 
     let currentRotation = 0;
+    let spinCount = 0;
+    let achievment_1_check = false;
 
     function spinRarity() {
+        spinCount++;
+        if (spinCount > 2 && !(achievment_1_check)) {
+          alert("Achievment 1 Complete!");
+          achievment_1_check = true;
+        }
         const rarityBox = document.getElementById('rarityBox');
         const rarityText = document.getElementById('rarityText');
         const spinButton = document.getElementById('spinButton');
