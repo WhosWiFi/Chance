@@ -321,8 +321,8 @@
             rarityText.textContent = result.rarityText;  // Set the custom rarity text
             updateRarityAppearance(rarityBox, result.className, result.bgColor, result.textColor);
             markTierAsCollected(result.elementId);
-            if (result.elementId == 'secret'){
-                document.getElementById('username').textColor = 'gold';
+            if (result.elementId == 'gold'){
+                document.getElementById('username').style.color = 'gold';
             }
             // Enable the button after the animation completes
             spinButton.disabled = false;
