@@ -353,6 +353,25 @@
     }
     
     function achievmentCheck() {
+      const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+      let colorIndex = 0;
+      let rainbowInterval;
+
+      function startRainbowEffect() {
+        if (!rainbowInterval) {
+          rainbowInterval = setInterval(() => {
+            const usernameElement = document.getElementById('username');
+            usernameElement.style.color = rainbowColors[colorIndex];
+            colorIndex = (colorIndex + 1) % rainbowColors.length;
+          }, 1000); // Change color every second
+        }
+      }
+
+      function stopRainbowEffect() {
+        clearInterval(rainbowInterval);
+        rainbowInterval = null;
+      }
+
       for (let i = tiers.length - 1; i >= 0; i--) {
             const tierElement = document.getElementById(tiers[i].elementId);
             if (tierElement.classList.contains('checked') && tiers[i].elementId == 'common' && !(achievment_tier1_check)) {
@@ -590,6 +609,7 @@
             }
 
             if (tierElement.classList.contains('checked') && tiers[i].elementId == 'secret' && !(achievment_tier10_check)) {
+              startRainbowEffect();
               // Create the iframe
               const iframe = document.createElement('iframe');
               iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
