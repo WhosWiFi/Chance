@@ -616,15 +616,55 @@
             }
       }
 
-      if (spinCount > 4 && !(achievment_spin1_check)) {
-        alert("🎉 Achievement Unlocked: Spin Master! (5 Spins)");
-        achievment_spin1_check = true;
-      }
+        if (spinCount > 4 && !(achievment_spin1_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Spin Master! (5 Spins)</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
 
-      if (spinCount > 9 && !(achievment_spin2_check)) {
-        alert("🚀 You're on fire! (10 Spins)");
-        achievment_spin2_check = true;
-      }
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_spin1_check = true;
+            }
+
+            if (spinCount > 4 && !(achievment_spin2_check)) {
+              // Create the iframe
+              const iframe = document.createElement('iframe');
+              iframe.style.position = 'fixed'; // Fixed position to stick at the bottom right
+              iframe.style.bottom = '20px'; // Distance from the bottom of the screen
+              iframe.style.right = '20px'; // Distance from the right of the screen
+              iframe.style.width = '200px'; // Smaller width for the rectangle
+              iframe.style.height = '80px'; // Smaller height for the rectangle
+              iframe.style.border = '2px solid black'; // Add a border
+              iframe.style.zIndex = '1000'; // Make sure it's on top of other elements
+              iframe.style.backgroundColor = 'white'; // Background color for the iframe
+              
+              // Add message inside the iframe
+              iframe.srcdoc = '<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 20px;">Achievement Unlocked! Spin Legend! (10 Spins)</body>';
+              
+              // Append iframe to body
+              document.body.appendChild(iframe);
+
+              setTimeout(() => {
+                  iframe.remove();
+              }, 5000);
+
+                achievment_spin2_check = true;
+            }
     }
 
     function getRandomRarity(tiers) {
