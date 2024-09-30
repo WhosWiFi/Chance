@@ -226,6 +226,26 @@
 
     // Display the username in the top-right corner
     document.getElementById('username').textContent = username || 'Guest';
+    // Fetch the username color from the server
+    fetchColorFromServer(username);
+
+    function fetchColorFromServer(username) {
+      fetch(`/get_color?username=${username}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            document.getElementById('username').style.color = data.color; // Set username color
+          } else {
+            console.error('Error fetching color:', data.message);
+            document.getElementById('username').style.color = 'black'; // Default color if not found
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          document.getElementById('username').style.color = 'black'; // Default color on error
+        });
+    }
+    
     document.getElementById('spinButton').addEventListener('click', spinRarity);
 
     const tiers = [
@@ -685,6 +705,26 @@
 
                 achievment_spin2_check = true;
             }
+    }
+
+    function fetchColorFromDatabase(username) {
+      // Assuming you have a global function to execute SQL
+      const sql = `SELECT color FROM users WHERE username = ?`;
+      const params = [username];
+
+      // Execute the SQL command to fetch the user's color
+      executeSQL(sql, params)
+        .then(result => {
+          if (result && result.color) {
+            console.log(result);
+            document.getElementById('username').style.color = result.color; // Set username color
+          } else {
+            console.error('Color not found for username:', username);
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching color from database:', error);
+        });
     }
 
     function getRandomRarity(tiers) {

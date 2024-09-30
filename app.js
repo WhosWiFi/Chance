@@ -92,6 +92,29 @@ app.post('/login', (req, res) => {
 });
 
 
+// Endpoint to get user's color
+app.get('/get_color', (req, res) => {
+  const { username } = req.query; // Extract username from the query parameter
+
+  // SQL query to fetch the user's color
+  const query = `SELECT color FROM users WHERE username = '${username}'`;
+  
+  db.query(query, [username], (err, results) => {
+    if (err) {
+      console.error('Error fetching color:', err);
+      return res.status(500).json({ success: false, message: 'Failed to fetch color' });
+    }
+
+    // Check if a color was found
+    if (results.length > 0) {
+      const userColor = results[0].color; // Get the user's color from results
+      return res.json({ success: true, color: userColor }); // Return success and color
+    } else {
+      return res.json({ success: false, message: 'User not found' });
+    }
+  });
+});
+
 // Endpoint to update user's color
 app.post('/update_color', (req, res) => {
   const { username, color } = req.body;
