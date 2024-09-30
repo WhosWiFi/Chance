@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User's Inventory - Badge Collection</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .inventory-container {
+      display: flex; /* Use flexbox to layout badges */
+      flex-wrap: wrap; /* Allow badges to wrap */
+      justify-content: center; /* Center badges horizontally */
+      width: 90%;
+      max-width: 1200px;
+      margin-top: 50px;
+      gap: 20px; /* Space between badges */
+    }
+
+    .badge {
+      border: 2px solid #444;
+      border-radius: 10px;
+      padding: 15px; /* Adjust padding */
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+      color: #fff; /* White text for better contrast */
+      min-width: 120px; /* Ensure each badge has a minimum width */
+      height: 180px; /* Adjust height to make it taller */
+    }
+
+    /* Unique colors for each badge */
+    .badge-1 { background-color: #ff4d4d; } /* Red */
+    .badge-2 { background-color: #4d94ff; } /* Blue */
+    .badge-3 { background-color: #4dff4d; } /* Green */
+    .badge-4 { background-color: #ffd94d; } /* Yellow */
+    .badge-5 { background-color: #d14eff; } /* Purple */
+
+    .badge img {
+      width: 80px; /* Adjust image width */
+      height: 80px; /* Adjust image height */
+      margin-bottom: 10px;
+    }
+
+    .badge:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    .badge-name {
+      font-weight: bold;
+      font-size: 16px; /* Adjust font size */
+    }
+
+    /* Badge detail display */
+    .badge-detail-container {
+      width: 100%;
+      max-width: 1000px;
+      height: 300px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 15px;
+      position: fixed;
+      bottom: -400px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: bottom 0.5s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.9);
+    }
+
+    .badge-detail-container.active {
+      bottom: 20px;
+    }
+
+    .badge-detail-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      box-shadow: 0px 5px 20px rgba(13, 0, 255, 0.8);
+    }
+
+    .badge-detail-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .badge-description {
+      font-size: 16px;
+      text-align: center;
+      max-width: 80%;
+    }
+
+    /* Background effect on selection */
+    .bg-effect {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.5s;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 204, 0, 0.2) 100%);
+    }
+
+    .bg-effect.active {
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Badge Inventory</h1>
+
+  <div class="inventory-container">
+    <div class="badge badge-1" data-badge="1">
+      <img src="https://via.placeholder.com/100x100.png?text=Badge+1" alt="Badge 1">
+      <div class="badge-name">Elite Master</div>
+    </div>
+
+    <div class="badge badge-2" data-badge="2">
+      <img src="https://via.placeholder.com/100x100.png?text=Badge+2" alt="Badge 2">
+      <div class="badge-name">Sharpshooter</div>
+    </div>
+
+    <div class="badge badge-3" data-badge="3">
+      <img src="https://via.placeholder.com/100x100.png?text=Badge+3" alt="Badge 3">
+      <div class="badge-name">Expert</div>
+    </div>
+
+    <div class="badge badge-4" data-badge="4">
+      <img src="https://via.placeholder.com/100x100.png?text=Badge+4" alt="Badge 4">
+      <div class="badge-name">Warrior</div>
+    </div>
+
+    <div class="badge badge-5" data-badge="5">
+      <img src="https://via.placeholder.com/100x100.png?text=Badge+5" alt="Badge 5">
+      <div class="badge-name">Legendary</div>
+    </div>
+  </div>
+
+  <!-- Badge Detail View -->
+  <div class="badge-detail-container" id="badgeDetail">
+    <img src="" alt="Selected Badge" class="badge-detail-img" id="badgeDetailImg">
+    <div class="badge-detail-name" id="badgeDetailName">Badge Name</div>
+    <div class="badge-description" id="badgeDescription">Badge Description goes here. It gives you the power of awesomeness!</div>
+  </div>
+
+  <!-- Background Effect -->
+  <div class="bg-effect" id="bgEffect"></div>
+
+  <script>
+    let selectedBadge = null; // Track the currently selected badge
+
+    const badgeDetails = {
+      1: {
+        img: "https://via.placeholder.com/150x150.png?text=Elite+Master",
+        name: "Elite Master",
+        description: "Achieved the highest level of mastery in tactical strategies.",
+        effectColor: "rgba(255, 77, 77, 0.2)", // Red effect
+        borderColor: "#ff4d4d", // Red border
+        shadowColor: "rgba(255, 77, 77, 0.8)" // Red shadow
+      },
+      2: {
+        img: "https://via.placeholder.com/150x150.png?text=Sharpshooter",
+        name: "Sharpshooter",
+        description: "Demonstrated impeccable marksmanship skills.",
+        effectColor: "rgba(77, 148, 255, 0.2)", // Blue effect
+        borderColor: "#4d94ff", // Blue border
+        shadowColor: "rgba(77, 148, 255, 0.8)" // Blue shadow
+      },
+      3: {
+        img: "https://via.placeholder.com/150x150.png?text=Expert",
+        name: "Expert",
+        description: "Displayed unparalleled expertise in all combat situations.",
+        effectColor: "rgba(77, 255, 77, 0.2)", // Green effect
+        borderColor: "#4dff4d", // Green border
+        shadowColor: "rgba(77, 255, 77, 0.8)" // Green shadow
+      },
+      4: {
+        img: "https://via.placeholder.com/150x150.png?text=Warrior",
+        name: "Warrior",
+        description: "Known for fearlessness and dominating the battlefield.",
+        effectColor: "rgba(255, 217, 77, 0.2)", // Yellow effect
+        borderColor: "#ffd94d", // Yellow border
+        shadowColor: "rgba(255, 217, 77, 0.8)" // Yellow shadow
+      },
+      5: {
+        img: "https://via.placeholder.com/150x150.png?text=Legendary",
+        name: "Legendary",
+        description: "Legends never die. They live forever in the tales of valor.",
+        effectColor: "rgba(209, 78, 255, 0.2)", // Purple effect
+        borderColor: "#d14eff", // Purple border
+        shadowColor: "rgba(209, 78, 255, 0.8)" // Purple shadow
+      },
+    };
+
+    const badges = document.querySelectorAll('.badge');
+
+    badges.forEach(badge => {
+      badge.addEventListener('click', () => {
+        const badgeId = badge.getAttribute('data-badge');
+
+        // Check if the same badge is clicked again to toggle visibility
+        if (selectedBadge === badgeId) {
+          hideBadgeDetail();
+          selectedBadge = null; // Reset the selected badge
+        } else {
+          showBadgeDetail(badgeId);
+          selectedBadge = badgeId; // Set the newly selected badge
+        }
+      });
+    });
+
+    function showBadgeDetail(badgeId) {
+      const detail = badgeDetails[badgeId];
+
+      // Set badge detail values
+      document.getElementById('badgeDetailImg').src = detail.img;
+      document.getElementById('badgeDetailName').textContent = detail.name;
+      document.getElementById('badgeDescription').textContent = detail.description;
+
+      // Set the unique background and border color
+      document.getElementById('bgEffect').style.background = detail.effectColor;
+      document.getElementById('badgeDetail').style.borderColor = detail.borderColor;
+      // Set the box shadow color for the badge detail image
+      document.getElementById('badgeDetailImg').style.boxShadow = `0px 5px 20px ${detail.shadowColor}`;
+
+      // Activate the background and badge detail display
+      document.getElementById('bgEffect').classList.add('active');
+      document.getElementById('badgeDetail').classList.add('active');
+    }
+
+    function hideBadgeDetail() {
+      document.getElementById('bgEffect').classList.remove('active');
+      document.getElementById('badgeDetail').classList.remove('active');
+      // Reset the box shadow
+      document.getElementById('badgeDetailImg').style.boxShadow = `0px 5px 20px rgba(13, 0, 255, 0.8)`;
+    }
+  </script>
+</body>
+</html>

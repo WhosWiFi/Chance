@@ -24,6 +24,14 @@ app.get('/home', function (req, res) {
       });
 });
 
+app.get('/inventory', function (req, res) {
+  fs.readFile('inventory.html', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'text/html'});
+      res.write(data);
+      return res.end();
+    });
+});
+
 app.get('/background.jpg', function (req, res) {
     fs.readFile('images/background.jpg', function (err, data) {
       res.writeHead(200, {'Content-Type': 'image/jpeg'});
@@ -119,6 +127,8 @@ app.get('/dragon_egg.jpg', function (req, res) {
       return res.end();
     });
 });
+
+
 
 app.listen(3000, function () {
   console.log('Chance is being hosted at http://localhost:3000');
