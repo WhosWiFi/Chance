@@ -727,7 +727,8 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        color: rarestColor
+                        color: tiers[i].color,
+                        username: username
                     })
                 })
                 .then(response => response.json())

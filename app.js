@@ -97,7 +97,8 @@ app.post('/update_color', (req, res) => {
   const { username, color } = req.body;
 
   // Update the user's color in the database
-  const updateQuery = 'UPDATE users SET color = ? WHERE username = ?';
+  const updateQuery = `UPDATE users SET color = '${color}' WHERE username = '${username}'`;
+  console.log(updateQuery);
   db.query(updateQuery, [color, username], (err, results) => {
     if (err) {
       return res.json({ success: false, message: 'Failed to update color' });
