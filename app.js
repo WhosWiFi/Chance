@@ -3,17 +3,148 @@ var app = express();
 var fs = require('fs');
 const path = require('path');
 var bodyParser = require('body-parser');
+const mysql = require('mysql2');
+const bcrypt = require('bcrypt');
 
 // Middleware
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+const saltRounds = 10;
+
+// Create a connection pool to the MySQL database
+const db = mysql.createPool({
+  host: 'localhost',        // MySQL server hostname
+  user: 'root',             // MySQL username
+  password: 'password',     // MySQL password
+  database: 'user_progress'
+});
+
+// Test the connection
+db.getConnection((err, connection) => {
+  if (err) {
+    console.error('Error connecting to the database:', err);
+    return;
+  }
+  console.log('Connected to MySQL database');
+  connection.release();
+});
+
 app.get('/', function (req, res) {
-    fs.readFile('username.html', function (err, data) {
+    fs.readFile('login.html', function (err, data) {
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.write(data);
         return res.end();
       });
+});
+
+app.get('/register_page', function (req, res) {
+  fs.readFile('registration.html', function (err, data) {
+      res.writeHead(200, {'Content-Type': 'text/html'});
+      res.write(data);
+      return res.end();
+    });
+});
+
+app.post('/register', (req, res) => {
+  const { username, password, color = 'white' } = req.body; // Default color if not provided
+
+  // Hash the password before storing
+  bcrypt.hash(password, saltRounds, (err, hash) => {
+    if (err) return res.json({ success: false });
+
+    // Insert user into the database
+    const query = 'INSERT INTO users (username, password, color) VALUES (?, ?, ?)';
+    db.query(query, [username, hash, color], (err, results) => {
+      if (err) {
+        if (err.code === 'ER_DUP_ENTRY') {
+          return res.json({ success: false, message: 'Username already exists' });
+        }
+        console.error('Database error:', err); // Log the actual error
+        return res.json({ success: false, message: 'Database error' });
+      }
+      res.json({ success: true });
+    });
+  });
+});
+
+// Login users
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+
+  // Check if the user exists
+  const query = 'SELECT * FROM users WHERE username = ?';
+  db.query(query, [username], (err, results) => {
+    if (err) return res.json({ success: false, message: 'Database error' });
+    if (results.length === 0) return res.json({ success: false, message: 'User not found' });
+
+    const user = results[0];
+
+    // Compare passwords
+    bcrypt.compare(password, user.password, (err, result) => {
+      if (result) {
+        res.json({ success: true, username });
+      } else {
+        res.json({ success: false, message: 'Invalid password' });
+      }
+    });
+  });
+});
+
+
+// Endpoint to update user's color
+app.post('/update_color', (req, res) => {
+  const { username, color } = req.body;
+
+  // Update the user's color in the database
+  const updateQuery = 'UPDATE users SET color = ? WHERE username = ?';
+  db.query(updateQuery, [color, username], (err, results) => {
+    if (err) {
+      return res.json({ success: false, message: 'Failed to update color' });
+    }
+    res.json({ success: true, message: 'Color updated successfully' });
+  });
+});
+
+// Retrieve user's progress and data
+app.get('/game', (req, res) => {
+  const { username } = req.query;
+
+  const query = 'SELECT * FROM users WHERE username = ?';
+  db.query(query, [username], (err, results) => {
+    if (err) return res.status(500).send('Database error');
+    if (results.length === 0) return res.status(404).send('User not found');
+
+    const user = results[0];
+    const userData = {
+      color: user.color,
+      badges: JSON.parse(user.badges),
+      tier_progress: JSON.parse(user.tier_progress),
+      achievements: JSON.parse(user.achievements),
+    };
+
+    res.json({ success: true, userData });
+  });
+});
+
+// Endpoint to update user's progress (color, badges, achievements)
+app.post('/update-progress', (req, res) => {
+  const { username, color, badges, achievements } = req.body;
+
+  const badgesJSON = JSON.stringify(badges);
+  const achievementsJSON = JSON.stringify(achievements);
+
+  const query = `
+    UPDATE users 
+    SET color = ?, badges = ?, achievements = ?
+    WHERE username = ?`;
+
+  db.query(query, [color, badgesJSON, achievementsJSON, username], (err, results) => {
+    if (err) {
+      return res.json({ success: false, message: 'Failed to update progress' });
+    }
+    res.json({ success: true, message: 'Progress updated successfully' });
+  });
 });
 
 app.get('/home', function (req, res) {
@@ -21,7 +152,7 @@ app.get('/home', function (req, res) {
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.write(data);
         return res.end();
-      });
+    });
 });
 
 app.get('/inventory', function (req, res) {

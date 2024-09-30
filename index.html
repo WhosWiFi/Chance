@@ -720,6 +720,23 @@
             if (tierElement.classList.contains('checked')) {
                 // Update the username color based on the rarest collected tier
                 document.getElementById('username').style.color = tiers[i].color;
+                            // Call /update-color with the rarest color using fetch()
+                fetch('/update_color', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        color: rarestColor
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Color updated successfully:', data);
+                })
+                .catch(error => {
+                    console.error('Error updating color:', error);
+                });
                 break; // Exit after finding the rarest unlocked tier
             }
         }
