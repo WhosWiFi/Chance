@@ -233,7 +233,10 @@
       fetch(`/get_color?username=${username}`)
         .then(response => response.json())
         .then(data => {
-          if (data.success) {
+          if(data.success && data.color == 'rainbow') {
+            startRainbowEffect();
+          }
+          if (data.success && data.color !== 'rainbow') {
             document.getElementById('username').style.color = data.color; // Set username color
           } else {
             console.error('Error fetching color:', data.message);
@@ -245,7 +248,7 @@
           document.getElementById('username').style.color = 'black'; // Default color on error
         });
     }
-    
+
     document.getElementById('spinButton').addEventListener('click', spinRarity);
 
     const tiers = [
@@ -327,7 +330,7 @@
         elementId: 'secret', 
         className: 'secret',
         rarityText: 'Secret - 1/1',
-        color: 'black'
+        color: 'rainbow'
       }
     ];
 
