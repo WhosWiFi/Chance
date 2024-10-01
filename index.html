@@ -769,11 +769,29 @@
         rarityBox.classList.add(className);
     }
 
+    function updateTier(tier) {
+      fetch('/update_tiers', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          tier: tier,
+          username: username
+        })
+      })
+      .then(response => response.json())
+      .catch(error => {
+        console.error('Error updating tier:', error);
+      });
+    }
+
     function markTierAsCollected(elementId) {
         const tierElement = document.getElementById(elementId);
         if (!tierElement.classList.contains('checked')) {
             tierElement.classList.add('checked');
             tierElement.innerHTML += ' <span class="checkmark">✔</span>';
+            updateTier(elementId);
         }
     }
 
