@@ -68,6 +68,57 @@ app.post('/register', (req, res) => {
   });
 });
 
+// Endpoint to get user's collected tiers
+app.get('/get_tiers', (req, res) => {
+  const { username } = req.query;
+
+  const query = `SELECT collected_tiers FROM users WHERE username = '${username}'`;
+
+  db.query(query, [username], (err, results) => {
+    if (err) {
+      console.error('Error fetching collected tiers:', err);
+      return res.status(500).json({ success: false, message: 'Failed to fetch collected tiers' });
+    }
+
+    if (results.length > 0) {
+      const tiers = results[0].collected_tiers ? results[0].collected_tiers.split(',') : [];
+      return res.json({ success: true, tiers });
+    } else {
+      return res.json({ success: false, message: 'User not found' });
+    }
+  });
+});
+
+// Endpoint to update user's collected tiers
+app.post('/update_tiers', (req, res) => {
+  const { username, tier } = req.body;
+
+  const fetchQuery = `SELECT collected_tiers FROM users WHERE username = '${username}'`;
+
+  db.query(fetchQuery, [username], (err, results) => {
+    if (err || results.length === 0) {
+      return res.status(500).json({ success: false, message: 'Failed to fetch user' });
+    }
+
+    let collectedTiers = results[0].collected_tiers ? results[0].collected_tiers.split(',') : [];
+    
+    if (!collectedTiers.includes(tier)) {
+      collectedTiers.push(tier);
+    }
+
+    const updatedTiers = collectedTiers.join(',');
+
+    const updateQuery = `UPDATE users SET collected_tiers = '${updatedTiers}' WHERE username = '${username}'`;
+    db.query(updateQuery, [updatedTiers, username], (err) => {
+      if (err) {
+        return res.status(500).json({ success: false, message: 'Failed to update tiers' });
+      }
+      res.json({ success: true, message: 'Tiers updated successfully', tiers: collectedTiers });
+    });
+  });
+});
+
+
 // Login users
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
@@ -121,7 +172,6 @@ app.post('/update_color', (req, res) => {
 
   // Update the user's color in the database
   const updateQuery = `UPDATE users SET color = '${color}' WHERE username = '${username}'`;
-  console.log(updateQuery);
   db.query(updateQuery, [color, username], (err, results) => {
     if (err) {
       return res.json({ success: false, message: 'Failed to update color' });
