@@ -44,23 +44,14 @@ app.get('/', function (req, res) {
   const token = req.cookies.whoswifi;
   
   if (!token) {
-    fs.readFile('login.html', function (err, data) {
-      res.writeHead(200, {'Content-Type': 'text/html'});
-      res.write(data);
-      return res.end();
-    });
+    res.redirect('https://whoswifi.com/login');
   } else {
     try {
       jwt.verify(token, process.env.JWT_SECRET);
       // If token is valid, redirect to game
       res.redirect('/game');
     } catch (err) {
-      // If token is invalid, show login page
-      fs.readFile('login.html', function (err, data) {
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write(data);
-        return res.end();
-      });
+      res.redirect('https://whoswifi.com/login');
     }
   }
 });
