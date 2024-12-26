@@ -87,13 +87,17 @@ app.get('/', function (req, res) {
 // Serve game page (protected route)
 app.get('/game', verifyToken, function (req, res) {
   console.log('14. Serving game page for user:', req.username);
-  fs.readFile('index.html', function (err, data) {
+  fs.readFile('index.html', 'utf8', function (err, data) {
     if (err) {
       console.log('15. Error reading index.html:', err);
       return res.status(500).send('Error loading game');
     }
+    
+    // Replace placeholder with actual username
+    const modifiedData = data.replace('{{username}}', req.username);
+    
     res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
+    res.write(modifiedData);
     return res.end();
   });
 });

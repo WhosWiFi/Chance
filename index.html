@@ -193,8 +193,8 @@
   </style>
 </head>
 <body>
-  <div id="usernameDisplay" class="username-display">
-    Username: <span id="username"></span>
+  <div class="username-display">
+    Username: <span id="username">{{username}}</span>
   </div>
 
   <div class="container">
@@ -220,15 +220,7 @@
   </div>
 
   <script>
-        // Extract the username from the query parameter
-    const params = new URLSearchParams(window.location.search);
-    const username = params.get('username');
-
-    // Display the username in the top-right corner
-    document.getElementById('username').textContent = username || 'Guest';
-    // Fetch the username color from the server
-    fetchColorFromServer(username);
-    checkOffCollectedTiers(username);
+    const username = document.getElementById('username').textContent;
 
     const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
     let colorIndex = 0;
