@@ -102,87 +102,111 @@ app.get('/game', verifyToken, function (req, res) {
   });
 });
 
-// Modified endpoints to use username from JWT
+// Get tiers endpoint
 app.get('/get_tiers', verifyToken, (req, res) => {
+  console.log('\n=== GET TIERS ENDPOINT ===');
+  console.log('User:', req.username);
+  
   const query = 'SELECT collected_tiers FROM user_data WHERE username = ?';
+  const params = [req.username];
+  
+  console.log('Executing SQL:', query);
+  console.log('With params:', params);
 
-  db.query(query, [req.username], (err, results) => {
+  db.query(query, params, (err, results) => {
     if (err) {
-      console.error('Error fetching collected tiers:', err);
+      console.error('❌ Database error:', err);
       return res.status(500).json({ success: false, message: 'Failed to fetch collected tiers' });
     }
 
     if (results.length > 0) {
+      console.log('✅ Found existing tiers:', results[0].collected_tiers);
       const tiers = results[0].collected_tiers ? results[0].collected_tiers.split(',') : [];
       return res.json({ success: true, tiers });
     } else {
-      return res.json({ success: false, message: 'User not found' });
+      console.log('⚠️ User not found, creating new entry');
+      const createQuery = 'INSERT INTO user_data (username, collected_tiers, color, achievements) VALUES (?, ?, ?, ?)';
+      const createParams = [req.username, '', 'white', '{}'];
+      
+      console.log('Executing SQL:', createQuery);
+      console.log('With params:', createParams);
+
+      db.query(createQuery, createParams, (err) => {
+        if (err) {
+          console.error('❌ Error creating user:', err);
+          return res.status(500).json({ success: false, message: 'Failed to create user data' });
+        }
+        console.log('✅ New user created successfully');
+        return res.json({ success: true, tiers: [] });
+      });
     }
   });
 });
 
+// Update tiers endpoint
 app.post('/update_tiers', verifyToken, (req, res) => {
+  console.log('\n=== UPDATE TIERS ENDPOINT ===');
   const { tier } = req.body;
-  const username = req.username;
+  console.log('User:', req.username);
+  console.log('New tier:', tier);
 
   const fetchQuery = 'SELECT collected_tiers FROM user_data WHERE username = ?';
+  const fetchParams = [req.username];
 
-  db.query(fetchQuery, [username], (err, results) => {
+  console.log('Executing SQL:', fetchQuery);
+  console.log('With params:', fetchParams);
+
+  db.query(fetchQuery, fetchParams, (err, results) => {
     if (err || results.length === 0) {
+      console.error('❌ Error fetching current tiers:', err);
       return res.status(500).json({ success: false, message: 'Failed to fetch user' });
     }
 
     let collectedTiers = results[0].collected_tiers ? results[0].collected_tiers.split(',') : [];
+    console.log('Current tiers:', collectedTiers);
     
     if (!collectedTiers.includes(tier)) {
       collectedTiers.push(tier);
+      console.log('Added new tier. Updated tiers:', collectedTiers);
     }
 
     const updatedTiers = collectedTiers.join(',');
     const updateQuery = 'UPDATE user_data SET collected_tiers = ? WHERE username = ?';
+    const updateParams = [updatedTiers, req.username];
     
-    db.query(updateQuery, [updatedTiers, username], (err) => {
+    console.log('Executing SQL:', updateQuery);
+    console.log('With params:', updateParams);
+
+    db.query(updateQuery, updateParams, (err) => {
       if (err) {
+        console.error('❌ Error updating tiers:', err);
         return res.status(500).json({ success: false, message: 'Failed to update tiers' });
       }
+      console.log('✅ Tiers updated successfully');
       res.json({ success: true, message: 'Tiers updated successfully', tiers: collectedTiers });
     });
   });
 });
 
-// Endpoint to get user's color
-app.get('/get_color', (req, res) => {
-  const { username } = req.query; // Extract username from the query parameter
+// Update color endpoint
+app.post('/update_color', verifyToken, (req, res) => {
+  console.log('\n=== UPDATE COLOR ENDPOINT ===');
+  const { color } = req.body;
+  console.log('User:', req.username);
+  console.log('New color:', color);
 
-  // SQL query to fetch the user's color
-  const query = `SELECT color FROM user_data WHERE username = '${username}'`;
+  const query = 'UPDATE user_data SET color = ? WHERE username = ?';
+  const params = [color, req.username];
   
-  db.query(query, [username], (err, results) => {
+  console.log('Executing SQL:', query);
+  console.log('With params:', params);
+
+  db.query(query, params, (err, results) => {
     if (err) {
-      console.error('Error fetching color:', err);
-      return res.status(500).json({ success: false, message: 'Failed to fetch color' });
-    }
-
-    // Check if a color was found
-    if (results.length > 0) {
-      const userColor = results[0].color; // Get the user's color from results
-      return res.json({ success: true, color: userColor }); // Return success and color
-    } else {
-      return res.json({ success: false, message: 'User not found' });
-    }
-  });
-});
-
-// Endpoint to update user's color
-app.post('/update_color', (req, res) => {
-  const { username, color } = req.body;
-
-  // Update the user's color in the database
-  const updateQuery = `UPDATE user_data SET color = '${color}' WHERE username = '${username}'`;
-  db.query(updateQuery, [color, username], (err, results) => {
-    if (err) {
+      console.error('❌ Error updating color:', err);
       return res.json({ success: false, message: 'Failed to update color' });
     }
+    console.log('✅ Color updated successfully');
     res.json({ success: true, message: 'Color updated successfully' });
   });
 });
@@ -344,7 +368,56 @@ app.get('/dragon_egg.jpg', function (req, res) {
     });
 });
 
+// Update achievements endpoint
+app.post('/update_achievements', verifyToken, (req, res) => {
+  console.log('\n=== UPDATE ACHIEVEMENTS ENDPOINT ===');
+  const { achievements } = req.body;
+  console.log('User:', req.username);
+  console.log('New achievements:', achievements);
 
+  const query = 'UPDATE user_data SET achievements = ? WHERE username = ?';
+  const params = [JSON.stringify(achievements), req.username];
+
+  console.log('Executing SQL:', query);
+  console.log('With params:', params);
+
+  db.query(query, params, (err, results) => {
+    if (err) {
+      console.error('❌ Error updating achievements:', err);
+      return res.json({ success: false, message: 'Failed to update achievements' });
+    }
+    console.log('✅ Achievements updated successfully');
+    res.json({ success: true, message: 'Achievements updated successfully' });
+  });
+});
+
+// Get achievements endpoint
+app.get('/get_achievements', verifyToken, (req, res) => {
+  console.log('\n=== GET ACHIEVEMENTS ENDPOINT ===');
+  console.log('User:', req.username);
+
+  const query = 'SELECT achievements FROM user_data WHERE username = ?';
+  const params = [req.username];
+
+  console.log('Executing SQL:', query);
+  console.log('With params:', params);
+
+  db.query(query, params, (err, results) => {
+    if (err) {
+      console.error('❌ Error fetching achievements:', err);
+      return res.status(500).json({ success: false, message: 'Failed to fetch achievements' });
+    }
+
+    if (results.length > 0) {
+      console.log('✅ Found achievements:', results[0].achievements);
+      const achievements = results[0].achievements ? JSON.parse(results[0].achievements) : {};
+      return res.json({ success: true, achievements });
+    } else {
+      console.log('⚠️ No achievements found for user');
+      return res.json({ success: false, message: 'User not found' });
+    }
+  });
+});
 
 app.listen(3123, function () {
   console.log('Chance is being hosted at http://localhost:3123');
