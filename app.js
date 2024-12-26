@@ -1,16 +1,18 @@
+require('dotenv').config();
+
 var express = require('express');
 var app = express();
 var fs = require('fs');
 const path = require('path');
 var bodyParser = require('body-parser');
 const mysql = require('mysql2');
-const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const cookieParser = require('cookie-parser');
 
 // Middleware
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-const saltRounds = 10;
+app.use(cookieParser());
 
 // Create a connection pool to the MySQL database
 const db = mysql.createPool({
@@ -20,39 +22,63 @@ const db = mysql.createPool({
   database: 'chance',
 });
 
-// Test the connection
-db.getConnection((err, connection) => {
-  if (err) {
-    console.error('Error connecting to the database:', err);
-    return;
+// Verify JWT middleware
+const verifyToken = (req, res, next) => {
+  const token = req.cookies.whoswifi;
+  
+  if (!token) {
+    return res.redirect('/');
   }
-  console.log('Connected to MySQL database');
-  connection.release();
-});
 
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.username = decoded.username;
+    next();
+  } catch (err) {
+    return res.redirect('/');
+  }
+};
+
+// Serve login page if no valid token
 app.get('/', function (req, res) {
+  const token = req.cookies.whoswifi;
+  
+  if (!token) {
     fs.readFile('login.html', function (err, data) {
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write(data);
-        return res.end();
-      });
-});
-
-app.get('/register_page', function (req, res) {
-  fs.readFile('registration.html', function (err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       return res.end();
     });
+  } else {
+    try {
+      jwt.verify(token, process.env.JWT_SECRET);
+      // If token is valid, redirect to game
+      res.redirect('/game');
+    } catch (err) {
+      // If token is invalid, show login page
+      fs.readFile('login.html', function (err, data) {
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write(data);
+        return res.end();
+      });
+    }
+  }
 });
 
-// Endpoint to get user's collected tiers
-app.get('/get_tiers', (req, res) => {
-  const { username } = req.query;
+// Serve game page (protected route)
+app.get('/game', verifyToken, function (req, res) {
+  fs.readFile('index.html', function (err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  });
+});
 
-  const query = `SELECT collected_tiers FROM user_data WHERE username = '${username}'`;
+// Modified endpoints to use username from JWT
+app.get('/get_tiers', verifyToken, (req, res) => {
+  const query = 'SELECT collected_tiers FROM user_data WHERE username = ?';
 
-  db.query(query, [username], (err, results) => {
+  db.query(query, [req.username], (err, results) => {
     if (err) {
       console.error('Error fetching collected tiers:', err);
       return res.status(500).json({ success: false, message: 'Failed to fetch collected tiers' });
@@ -67,11 +93,11 @@ app.get('/get_tiers', (req, res) => {
   });
 });
 
-// Endpoint to update user's collected tiers
-app.post('/update_tiers', (req, res) => {
-  const { username, tier } = req.body;
+app.post('/update_tiers', verifyToken, (req, res) => {
+  const { tier } = req.body;
+  const username = req.username;
 
-  const fetchQuery = `SELECT collected_tiers FROM user_data WHERE username = '${username}'`;
+  const fetchQuery = 'SELECT collected_tiers FROM user_data WHERE username = ?';
 
   db.query(fetchQuery, [username], (err, results) => {
     if (err || results.length === 0) {
@@ -85,8 +111,8 @@ app.post('/update_tiers', (req, res) => {
     }
 
     const updatedTiers = collectedTiers.join(',');
-
-    const updateQuery = `UPDATE user_data SET collected_tiers = '${updatedTiers}' WHERE username = '${username}'`;
+    const updateQuery = 'UPDATE user_data SET collected_tiers = ? WHERE username = ?';
+    
     db.query(updateQuery, [updatedTiers, username], (err) => {
       if (err) {
         return res.status(500).json({ success: false, message: 'Failed to update tiers' });
@@ -95,31 +121,6 @@ app.post('/update_tiers', (req, res) => {
     });
   });
 });
-
-
-// Login users
-app.post('/login', (req, res) => {
-  const { username, password } = req.body;
-
-  // Check if the user exists
-  const query = 'SELECT * FROM user_data WHERE username = ?';
-  db.query(query, [username], (err, results) => {
-    if (err) return res.json({ success: false, message: 'Database error' });
-    if (results.length === 0) return res.json({ success: false, message: 'User not found' });
-
-    const user = results[0];
-
-    // Compare passwords
-    bcrypt.compare(password, user.password, (err, result) => {
-      if (result) {
-        res.json({ success: true, username });
-      } else {
-        res.json({ success: false, message: 'Invalid password' });
-      }
-    });
-  });
-});
-
 
 // Endpoint to get user's color
 app.get('/get_color', (req, res) => {
@@ -317,6 +318,6 @@ app.get('/dragon_egg.jpg', function (req, res) {
 
 
 
-app.listen(3000, function () {
-  console.log('Chance is being hosted at http://localhost:3000');
+app.listen(3123, function () {
+  console.log('Chance is being hosted at http://localhost:3123');
 });
