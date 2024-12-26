@@ -419,6 +419,49 @@ app.get('/get_achievements', verifyToken, (req, res) => {
   });
 });
 
+// Add this endpoint to get initial user data
+app.get('/get_user_data', verifyToken, (req, res) => {
+  console.log('\n=== GET USER DATA ENDPOINT ===');
+  console.log('User:', req.username);
+
+  const query = 'SELECT color, collected_tiers, achievements FROM user_data WHERE username = ?';
+  const params = [req.username];
+
+  console.log('Executing SQL:', query);
+  console.log('With params:', params);
+
+  db.query(query, params, (err, results) => {
+    if (err) {
+      console.error('❌ Error fetching user data:', err);
+      return res.status(500).json({ success: false, message: 'Failed to fetch user data' });
+    }
+
+    if (results.length > 0) {
+      console.log('✅ Found user data:', results[0]);
+      return res.json({ 
+        success: true, 
+        userData: results[0]
+      });
+    } else {
+      console.log('⚠️ User not found, creating new entry');
+      const createQuery = 'INSERT INTO user_data (username, collected_tiers, color, achievements) VALUES (?, ?, ?, ?)';
+      const createParams = [req.username, '', 'white', '{}'];
+      
+      db.query(createQuery, createParams, (err) => {
+        if (err) {
+          console.error('❌ Error creating user:', err);
+          return res.status(500).json({ success: false, message: 'Failed to create user data' });
+        }
+        console.log('✅ New user created successfully');
+        return res.json({ 
+          success: true, 
+          userData: { color: 'white', collected_tiers: '', achievements: '{}' } 
+        });
+      });
+    }
+  });
+});
+
 app.listen(3123, function () {
   console.log('Chance is being hosted at http://localhost:3123');
 });

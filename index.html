@@ -220,6 +220,30 @@
   </div>
 
   <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const response = await fetch('/get_user_data');
+        const data = await response.json();
+        
+        if (data.success) {
+          // Load collected tiers
+          const collectedTiers = data.userData.collected_tiers ? data.userData.collected_tiers.split(',') : [];
+          collectedTiers.forEach(tier => {
+            const tierElement = document.getElementById(tier);
+            if (tierElement) {
+              tierElement.classList.add('checked');
+              tierElement.innerHTML += ' <span class="checkmark">✔</span>';
+            }
+          });
+
+          // Set initial color based on highest tier
+          updateUsernameColorBasedOnRarestTier();
+        }
+      } catch (error) {
+        console.error('Error loading user data:', error);
+      }
+    });
+
     const username = document.getElementById('username').textContent;
 
     const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
@@ -791,19 +815,17 @@
     function updateUsernameColorBasedOnRarestTier() {
         for (let i = tiers.length - 1; i >= 0; i--) {
             const tierElement = document.getElementById(tiers[i].elementId);
-            if (tierElement.classList.contains('checked')) {
-                // Update the username color based on the rarest collected tier
-                document.getElementById('username').style.color = tiers[i].color;
-                            // Call /update-color with the rarest color using fetch()
+            if (tierElement && tierElement.classList.contains('checked')) {
+                const color = tiers[i].color;
+                document.getElementById('username').style.color = color;
+                
+                // Update color in database
                 fetch('/update_color', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({
-                        color: tiers[i].color,
-                        username: username
-                    })
+                    body: JSON.stringify({ color })
                 })
                 .then(response => response.json())
                 .then(data => {
@@ -812,7 +834,7 @@
                 .catch(error => {
                     console.error('Error updating color:', error);
                 });
-                break; // Exit after finding the rarest unlocked tier
+                break;
             }
         }
     }
