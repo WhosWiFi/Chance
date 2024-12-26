@@ -1,5 +1,11 @@
 require('dotenv').config();
 
+// Add this check at the start of your app
+if (!process.env.JWT_SECRET) {
+    console.error('JWT_SECRET is not defined in environment variables');
+    process.exit(1);
+}
+
 var express = require('express');
 var app = express();
 var fs = require('fs');
@@ -22,6 +28,9 @@ const db = mysql.createPool({
   database: 'chance',
 });
 
+// Add logging to see what secret is being used
+console.log('JWT_SECRET loaded:', process.env.JWT_SECRET ? 'Yes' : 'No');
+
 // Verify JWT middleware
 const verifyToken = (req, res, next) => {
   console.log('1. Entering verifyToken middleware');
@@ -35,6 +44,11 @@ const verifyToken = (req, res, next) => {
     return res.redirect('/');
   }
 
+  if (!process.env.JWT_SECRET) {
+    console.error('JWT_SECRET is not available for verification');
+    return res.status(500).send('Server configuration error');
+  }
+
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     console.log('5. Token decoded successfully:', decoded);
@@ -43,6 +57,7 @@ const verifyToken = (req, res, next) => {
     next();
   } catch (err) {
     console.log('7. Token verification failed:', err.message);
+    console.log('7a. JWT_SECRET available:', !!process.env.JWT_SECRET);
     return res.redirect('/');
   }
 };
