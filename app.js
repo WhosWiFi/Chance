@@ -444,20 +444,7 @@ app.get('/get_user_data', verifyToken, (req, res) => {
       });
     } else {
       console.log('⚠️ User not found, creating new entry');
-      const createQuery = 'INSERT INTO user_data (username, collected_tiers, color, achievements) VALUES (?, ?, ?, ?)';
-      const createParams = [req.username, '', 'white', '{}'];
-      
-      db.query(createQuery, createParams, (err) => {
-        if (err) {
-          console.error('❌ Error creating user:', err);
-          return res.status(500).json({ success: false, message: 'Failed to create user data' });
-        }
-        console.log('✅ New user created successfully');
-        return res.json({ 
-          success: true, 
-          userData: { color: 'white', collected_tiers: '', achievements: '{}' } 
-        });
-      });
+      res.redirect('https://whoswifi.com/login'); //make guest account instead of this at some point
     }
   });
 });

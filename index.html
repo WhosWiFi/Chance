@@ -828,11 +828,7 @@
                     body: JSON.stringify({ color })
                 })
                 .then(response => response.json())
-                .then(data => {
-                    console.log('Color updated successfully:', data);
-                })
                 .catch(error => {
-                    console.error('Error updating color:', error);
                 });
                 break;
             }
