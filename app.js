@@ -14,10 +14,10 @@ const saltRounds = 10;
 
 // Create a connection pool to the MySQL database
 const db = mysql.createPool({
-  host: 'localhost',        // MySQL server hostname
-  user: 'root',             // MySQL username
-  password: 'password',     // MySQL password
-  database: 'user_progress'
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: 'chance',
 });
 
 // Test the connection
@@ -46,33 +46,11 @@ app.get('/register_page', function (req, res) {
     });
 });
 
-app.post('/register', (req, res) => {
-  const { username, password, color = 'white' } = req.body; // Default color if not provided
-
-  // Hash the password before storing
-  bcrypt.hash(password, saltRounds, (err, hash) => {
-    if (err) return res.json({ success: false });
-
-    // Insert user into the database
-    const query = 'INSERT INTO users (username, password, color) VALUES (?, ?, ?)';
-    db.query(query, [username, hash, color], (err, results) => {
-      if (err) {
-        if (err.code === 'ER_DUP_ENTRY') {
-          return res.json({ success: false, message: 'Username already exists' });
-        }
-        console.error('Database error:', err); // Log the actual error
-        return res.json({ success: false, message: 'Database error' });
-      }
-      res.json({ success: true });
-    });
-  });
-});
-
 // Endpoint to get user's collected tiers
 app.get('/get_tiers', (req, res) => {
   const { username } = req.query;
 
-  const query = `SELECT collected_tiers FROM users WHERE username = '${username}'`;
+  const query = `SELECT collected_tiers FROM user_data WHERE username = '${username}'`;
 
   db.query(query, [username], (err, results) => {
     if (err) {
@@ -93,7 +71,7 @@ app.get('/get_tiers', (req, res) => {
 app.post('/update_tiers', (req, res) => {
   const { username, tier } = req.body;
 
-  const fetchQuery = `SELECT collected_tiers FROM users WHERE username = '${username}'`;
+  const fetchQuery = `SELECT collected_tiers FROM user_data WHERE username = '${username}'`;
 
   db.query(fetchQuery, [username], (err, results) => {
     if (err || results.length === 0) {
@@ -108,7 +86,7 @@ app.post('/update_tiers', (req, res) => {
 
     const updatedTiers = collectedTiers.join(',');
 
-    const updateQuery = `UPDATE users SET collected_tiers = '${updatedTiers}' WHERE username = '${username}'`;
+    const updateQuery = `UPDATE user_data SET collected_tiers = '${updatedTiers}' WHERE username = '${username}'`;
     db.query(updateQuery, [updatedTiers, username], (err) => {
       if (err) {
         return res.status(500).json({ success: false, message: 'Failed to update tiers' });
@@ -124,7 +102,7 @@ app.post('/login', (req, res) => {
   const { username, password } = req.body;
 
   // Check if the user exists
-  const query = 'SELECT * FROM users WHERE username = ?';
+  const query = 'SELECT * FROM user_data WHERE username = ?';
   db.query(query, [username], (err, results) => {
     if (err) return res.json({ success: false, message: 'Database error' });
     if (results.length === 0) return res.json({ success: false, message: 'User not found' });
@@ -148,7 +126,7 @@ app.get('/get_color', (req, res) => {
   const { username } = req.query; // Extract username from the query parameter
 
   // SQL query to fetch the user's color
-  const query = `SELECT color FROM users WHERE username = '${username}'`;
+  const query = `SELECT color FROM user_data WHERE username = '${username}'`;
   
   db.query(query, [username], (err, results) => {
     if (err) {
@@ -171,7 +149,7 @@ app.post('/update_color', (req, res) => {
   const { username, color } = req.body;
 
   // Update the user's color in the database
-  const updateQuery = `UPDATE users SET color = '${color}' WHERE username = '${username}'`;
+  const updateQuery = `UPDATE user_data SET color = '${color}' WHERE username = '${username}'`;
   db.query(updateQuery, [color, username], (err, results) => {
     if (err) {
       return res.json({ success: false, message: 'Failed to update color' });
@@ -184,7 +162,7 @@ app.post('/update_color', (req, res) => {
 app.get('/game', (req, res) => {
   const { username } = req.query;
 
-  const query = 'SELECT * FROM users WHERE username = ?';
+  const query = 'SELECT * FROM user_data WHERE username = ?';
   db.query(query, [username], (err, results) => {
     if (err) return res.status(500).send('Database error');
     if (results.length === 0) return res.status(404).send('User not found');
@@ -192,7 +170,6 @@ app.get('/game', (req, res) => {
     const user = results[0];
     const userData = {
       color: user.color,
-      badges: JSON.parse(user.badges),
       tier_progress: JSON.parse(user.tier_progress),
       achievements: JSON.parse(user.achievements),
     };
@@ -201,20 +178,25 @@ app.get('/game', (req, res) => {
   });
 });
 
-// Endpoint to update user's progress (color, badges, achievements)
+// Endpoint to update user's progress (color, collected_tiers, achievements)
 app.post('/update-progress', (req, res) => {
-  const { username, color, badges, achievements } = req.body;
+  const { username, color, collected_tiers, achievements } = req.body;
 
-  const badgesJSON = JSON.stringify(badges);
-  const achievementsJSON = JSON.stringify(achievements);
+  // Convert arrays/objects to strings if they aren't already
+  const tiersString = Array.isArray(collected_tiers) ? collected_tiers.join(',') : collected_tiers;
+  const achievementsJSON = typeof achievements === 'object' ? 
+    JSON.stringify(achievements) : achievements;
 
   const query = `
-    UPDATE users 
-    SET color = ?, badges = ?, achievements = ?
+    UPDATE user_data 
+    SET color = ?, 
+        collected_tiers = ?, 
+        achievements = ?
     WHERE username = ?`;
 
-  db.query(query, [color, badgesJSON, achievementsJSON, username], (err, results) => {
+  db.query(query, [color, tiersString, achievementsJSON, username], (err, results) => {
     if (err) {
+      console.error('Update error:', err);
       return res.json({ success: false, message: 'Failed to update progress' });
     }
     res.json({ success: true, message: 'Progress updated successfully' });
