@@ -24,33 +24,46 @@ const db = mysql.createPool({
 
 // Verify JWT middleware
 const verifyToken = (req, res, next) => {
+  console.log('1. Entering verifyToken middleware');
+  console.log('2. Cookies received:', req.cookies);
+  
   const token = req.cookies.whoswifi;
+  console.log('3. Token found:', token ? 'Yes' : 'No');
   
   if (!token) {
+    console.log('4. No token found, redirecting to /');
     return res.redirect('/');
   }
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    console.log('5. Token decoded successfully:', decoded);
     req.username = decoded.username;
+    console.log('6. Username set:', req.username);
     next();
   } catch (err) {
+    console.log('7. Token verification failed:', err.message);
     return res.redirect('/');
   }
 };
 
 // Serve login page if no valid token
 app.get('/', function (req, res) {
+  console.log('8. Handling root route');
   const token = req.cookies.whoswifi;
+  console.log('9. Token at root:', token ? 'Yes' : 'No');
   
   if (!token) {
+    console.log('10. No token, redirecting to WhosWiFi login');
     res.redirect('https://whoswifi.com/login');
   } else {
     try {
-      jwt.verify(token, process.env.JWT_SECRET);
-      // If token is valid, redirect to game
+      console.log('11. Attempting to verify token');
+      const decoded = jwt.verify(token, process.env.JWT_SECRET);
+      console.log('12. Token verified, redirecting to game');
       res.redirect('/game');
     } catch (err) {
+      console.log('13. Token verification failed:', err.message);
       res.redirect('https://whoswifi.com/login');
     }
   }
@@ -58,7 +71,12 @@ app.get('/', function (req, res) {
 
 // Serve game page (protected route)
 app.get('/game', verifyToken, function (req, res) {
+  console.log('14. Serving game page for user:', req.username);
   fs.readFile('index.html', function (err, data) {
+    if (err) {
+      console.log('15. Error reading index.html:', err);
+      return res.status(500).send('Error loading game');
+    }
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
