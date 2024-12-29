@@ -1,11 +1,5 @@
 require('dotenv').config();
 
-// Add this check at the start of your app
-if (!process.env.JWT_SECRET) {
-    console.error('JWT_SECRET is not defined in environment variables');
-    process.exit(1);
-}
-
 var express = require('express');
 var app = express();
 var fs = require('fs');
